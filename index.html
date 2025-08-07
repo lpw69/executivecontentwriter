@@ -6,35 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
     <!-- SEO Meta Tags -->
-    <title>LinkedIn Content Writer for Founders & CEOs | Social Media Writer for Startups</title>
+    <title>LinkedIn Content Writer & Founder Content Writer | Social Media Writer for Startup CEOs</title>
     <meta name="description" content="Expert LinkedIn content writer for startup founders and CEOs. Social media writing, newsletter strategy, and executive content marketing that generates 40M+ views. Book free audit today.">
     <meta name="keywords" content="linkedin content writer, social media writer for founders, startup founder content writer, CEO social media writer, newsletter writer for executives, founder linkedin writer, executive content marketing, content writer for startups">
     <meta name="author" content="Lewis Patrick">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <link rel="canonical" href="https://executivecontentwriter.vercel.app/">
+    <link rel="canonical" href="https://executivecontentwriter.com/">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="LinkedIn Content Writer for Founders & CEOs | Lewis Patrick">
     <meta property="og:description" content="Expert LinkedIn content writer for startup founders and CEOs. Social media writing, newsletter strategy, and executive content marketing.">
-    <meta property="og:url" content="https://executivecontentwriter.vercel.app/">
+    <meta property="og:url" content="https://executivecontentwriter.com/">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://executivecontentwriter.vercel.app/linkedin-writer-og.jpg">
+    <meta property="og:image" content="https://executivecontentwriter.com/linkedin-writer-og.jpg">
     <meta property="og:site_name" content="Executive Content Writer">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LinkedIn Content Writer for Founders & CEOs">
     <meta name="twitter:description" content="Expert LinkedIn content writer for startup founders and CEOs. 40M+ views generated.">
-    <meta name="twitter:image" content="https://executivecontentwriter.vercel.app/linkedin-writer-twitter.jpg">
+    <meta name="twitter:image" content="https://executivecontentwriter.com/linkedin-writer-twitter.jpg">
     <meta name="twitter:creator" content="@WaldronLewis">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
-    <!-- Performance Optimization -->
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"></noscript>
+    <!-- Font Loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- Schema Markup -->
     <script type="application/ld+json">
@@ -43,11 +44,11 @@
       "@graph": [
         {
           "@type": "Person",
-          "@id": "https://executivecontentwriter.vercel.app/#person",
+          "@id": "https://executivecontentwriter.com/#person",
           "name": "Lewis Patrick",
           "jobTitle": "LinkedIn Content Writer for Executives & Founders",
           "description": "Expert LinkedIn content writer specializing in social media and newsletter writing for startup founders and CEOs.",
-          "url": "https://executivecontentwriter.vercel.app/",
+          "url": "https://executivecontentwriter.com/",
           "sameAs": [
             "https://www.linkedin.com/in/lewis-waldron-21474a222/",
             "https://x.com/WaldronLewis"
@@ -64,12 +65,12 @@
         },
         {
           "@type": "ProfessionalService",
-          "@id": "https://executivecontentwriter.vercel.app/#business",
+          "@id": "https://executivecontentwriter.com/#business",
           "name": "Executive Content Writer",
           "description": "LinkedIn content writer specializing in social media and newsletter writing for startup founders and CEOs.",
-          "url": "https://executivecontentwriter.vercel.app/",
+          "url": "https://executivecontentwriter.com/",
           "founder": {
-            "@id": "https://executivecontentwriter.vercel.app/#person"
+            "@id": "https://executivecontentwriter.com/#person"
           },
           "serviceType": "Content Writing Services",
           "areaServed": {
@@ -123,16 +124,16 @@
         },
         {
           "@type": "WebSite",
-          "@id": "https://executivecontentwriter.vercel.app/#website",
-          "url": "https://executivecontentwriter.vercel.app/",
+          "@id": "https://executivecontentwriter.com/#website",
+          "url": "https://executivecontentwriter.com/",
           "name": "Executive Content Writer",
           "description": "LinkedIn content writer for startup founders, CEOs, and executives",
           "publisher": {
-            "@id": "https://executivecontentwriter.vercel.app/#person"
+            "@id": "https://executivecontentwriter.com/#person"
           },
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://executivecontentwriter.vercel.app/?s={search_term_string}",
+            "target": "https://executivecontentwriter.com/?s={search_term_string}",
             "query-input": "required name=search_term_string"
           }
         }
@@ -147,11 +148,16 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
-            background: white;
-            color: #1F2937;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #ffffff;
+            color: #0f172a;
             line-height: 1.6;
+            font-weight: 400;
         }
 
         .container {
@@ -165,10 +171,12 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: white;
-            border-bottom: 1px solid #E5E7EB;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e2e8f0;
             z-index: 1000;
             padding: 1rem 0;
+            transition: all 0.3s ease;
         }
 
         .nav-container {
@@ -182,37 +190,44 @@
 
         .logo {
             font-size: 1.5rem;
-            font-weight: 700;
-            color: #1F2937;
+            font-weight: 800;
+            color: #0f172a;
+            letter-spacing: -0.025em;
         }
 
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.5rem;
         }
 
         .nav-menu a {
-            color: #6B7280;
+            color: #475569;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: all 0.2s ease;
         }
 
         .nav-menu a:hover {
-            color: #1F2937;
+            color: #0f172a;
         }
 
         .nav-cta {
-            background: #2563EB;
+            background: #0f172a;
             color: white;
-            padding: 0.75rem 1.5rem;
+            padding: 0.875rem 1.75rem;
             border-radius: 6px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            border: 2px solid #0f172a;
         }
 
         .nav-cta:hover {
-            background: #1D4ED8;
+            background: transparent;
+            color: #0f172a;
         }
 
         /* Hero Section */
@@ -221,147 +236,164 @@
             display: flex;
             align-items: center;
             padding: 8rem 0 4rem;
+            background: #ffffff;
         }
 
         .hero-content {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 4rem;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 5rem;
             align-items: center;
         }
 
         .hero-text h1 {
-            font-size: 3.5rem;
+            font-size: 3.75rem;
             font-weight: 900;
             line-height: 1.1;
             margin-bottom: 2rem;
-            color: #1F2937;
+            color: #0f172a;
+            letter-spacing: -0.025em;
         }
 
         .hero-text .highlight {
-            color: #2563EB;
+            color: #3b82f6;
         }
 
         .hero-subtitle {
             font-size: 1.25rem;
-            color: #6B7280;
-            margin-bottom: 2rem;
+            color: #475569;
+            margin-bottom: 2.5rem;
+            line-height: 1.7;
+            font-weight: 500;
         }
 
         .hero-features {
             list-style: none;
-            margin-bottom: 2.5rem;
+            margin-bottom: 3rem;
         }
 
         .hero-features li {
-            padding: 0.5rem 0;
-            color: #6B7280;
+            padding: 0.75rem 0;
+            color: #475569;
             position: relative;
-            padding-left: 1.5rem;
+            padding-left: 2rem;
+            font-size: 1.1rem;
+            font-weight: 500;
         }
 
         .hero-features li::before {
-            content: '•';
+            content: '✓';
             position: absolute;
             left: 0;
-            color: #2563EB;
-            font-weight: bold;
+            color: #10b981;
+            font-weight: 700;
+            font-size: 1.1rem;
         }
 
         .hero-cta {
             display: flex;
-            gap: 1rem;
+            gap: 1.25rem;
         }
 
         .btn-primary {
-            background: #2563EB;
+            background: #0f172a;
             color: white;
-            padding: 1rem 2rem;
-            border-radius: 8px;
+            padding: 1.125rem 2.25rem;
+            border-radius: 6px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            border: 2px solid #0f172a;
         }
 
         .btn-primary:hover {
-            background: #1D4ED8;
+            background: transparent;
+            color: #0f172a;
         }
 
         .btn-secondary {
             background: transparent;
-            color: #1F2937;
-            padding: 1rem 2rem;
-            border: 2px solid #E5E7EB;
-            border-radius: 8px;
+            color: #0f172a;
+            padding: 1.125rem 2.25rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
         }
 
         .btn-secondary:hover {
-            border-color: #2563EB;
+            border-color: #0f172a;
+            background: #f8fafc;
         }
 
         /* Stats Box */
         .hero-stats {
-            background: #F9FAFB;
-            border: 1px solid #E5E7EB;
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
             border-radius: 12px;
-            padding: 3rem 2rem;
+            padding: 3rem 2.5rem;
             text-align: center;
         }
 
         .stats-number {
-            font-size: 2.5rem;
+            font-size: 3rem;
             font-weight: 900;
-            color: #2563EB;
-            margin-bottom: 0.5rem;
+            color: #0f172a;
+            margin-bottom: 0.75rem;
         }
 
         .stats-label {
-            color: #2563EB;
-            font-weight: 600;
+            color: #3b82f6;
+            font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 1px;
-            margin-bottom: 1rem;
+            font-size: 0.875rem;
+            margin-bottom: 1.25rem;
         }
 
         .stats-description {
-            color: #6B7280;
-            font-size: 0.95rem;
-            margin-bottom: 2rem;
+            color: #475569;
+            font-size: 1rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
         }
 
         .stats-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 1rem;
+            gap: 1.25rem;
         }
 
         .stat-item {
             background: white;
-            border: 1px solid #E5E7EB;
+            border: 1px solid #e2e8f0;
             border-radius: 8px;
-            padding: 1rem;
+            padding: 1.5rem;
             text-align: center;
         }
 
         .stat-value {
-            font-size: 1.25rem;
-            font-weight: 900;
-            color: #2563EB;
-            margin-bottom: 0.25rem;
+            font-size: 1.375rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 0.5rem;
         }
 
         .stat-name {
             font-size: 0.75rem;
-            color: #6B7280;
+            color: #64748b;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-weight: 600;
         }
 
         /* Services */
         .services {
             padding: 8rem 0;
-            background: #F9FAFB;
+            background: #f8fafc;
         }
 
         .section-header {
@@ -373,14 +405,16 @@
             font-size: 3rem;
             font-weight: 900;
             margin-bottom: 1.5rem;
-            color: #1F2937;
+            color: #0f172a;
+            letter-spacing: -0.025em;
         }
 
         .section-subtitle {
             font-size: 1.25rem;
-            color: #6B7280;
-            max-width: 700px;
+            color: #475569;
+            max-width: 800px;
             margin: 0 auto;
+            line-height: 1.6;
         }
 
         .services-grid {
@@ -391,37 +425,40 @@
 
         .service-card {
             background: white;
-            border: 1px solid #E5E7EB;
+            border: 2px solid #e2e8f0;
             border-radius: 12px;
-            padding: 3rem 2rem;
-            border-top: 3px solid #2563EB;
+            padding: 3rem 2.5rem;
+            transition: all 0.2s ease;
         }
 
         .service-card:hover {
-            transform: translateY(-5px);
-            transition: transform 0.3s ease;
+            border-color: #cbd5e1;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         }
 
         .service-name {
-            font-size: 1.75rem;
+            font-size: 1.875rem;
             font-weight: 800;
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
             text-align: center;
-            color: #1F2937;
+            color: #0f172a;
         }
 
         .service-price {
-            font-size: 2rem;
+            font-size: 2.25rem;
             font-weight: 900;
-            color: #2563EB;
-            margin-bottom: 1rem;
+            color: #3b82f6;
+            margin-bottom: 1.25rem;
             text-align: center;
         }
 
         .service-description {
-            color: #6B7280;
-            margin-bottom: 2rem;
+            color: #475569;
+            margin-bottom: 2.5rem;
             text-align: center;
+            font-size: 1.1rem;
+            line-height: 1.6;
         }
 
         .service-features {
@@ -430,33 +467,40 @@
         }
 
         .service-features li {
-            padding: 0.75rem 0;
-            color: #6B7280;
+            padding: 0.875rem 0;
+            color: #475569;
             position: relative;
-            padding-left: 1.5rem;
+            padding-left: 2rem;
+            font-size: 1rem;
+            line-height: 1.5;
         }
 
         .service-features li::before {
-            content: '•';
+            content: '✓';
             position: absolute;
             left: 0;
-            color: #2563EB;
-            font-weight: bold;
+            color: #10b981;
+            font-weight: 700;
+            font-size: 1rem;
         }
 
         .service-btn {
-            background: #2563EB;
+            background: #0f172a;
             color: white;
-            padding: 1rem 2rem;
-            border-radius: 8px;
+            padding: 1.125rem 2rem;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 700;
+            font-size: 1.05rem;
             display: block;
             text-align: center;
+            transition: all 0.2s ease;
+            border: 2px solid #0f172a;
         }
 
         .service-btn:hover {
-            background: #1D4ED8;
+            background: transparent;
+            color: #0f172a;
         }
 
         /* About */
@@ -466,7 +510,7 @@
         }
 
         .about-content {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             text-align: center;
         }
@@ -475,20 +519,88 @@
             font-size: 2.5rem;
             font-weight: 900;
             margin-bottom: 2rem;
-            color: #1F2937;
+            color: #0f172a;
+            letter-spacing: -0.025em;
         }
 
         .about-content p {
-            color: #6B7280;
+            color: #475569;
             margin-bottom: 2rem;
             line-height: 1.7;
-            font-size: 1.1rem;
+            font-size: 1.125rem;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 8rem 0;
+            background: #f8fafc;
+        }
+
+        .faq-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            gap: 2rem;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 3rem;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            transition: all 0.2s ease;
+        }
+
+        .faq-item:hover {
+            border-color: #cbd5e1;
+        }
+
+        .faq-item h3 {
+            font-size: 1.375rem;
+            font-weight: 800;
+            margin-bottom: 1.25rem;
+            color: #0f172a;
+            line-height: 1.4;
+        }
+
+        .faq-item p {
+            color: #475569;
+            line-height: 1.7;
+            font-size: 1.05rem;
+            margin: 0;
+        }
+
+        /* Expertise Section */
+        .expertise-section {
+            padding: 8rem 0;
+            background: white;
+        }
+
+        .expertise-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 4rem;
+        }
+
+        .expertise-item h3 {
+            font-size: 1.625rem;
+            font-weight: 800;
+            margin-bottom: 1.25rem;
+            color: #0f172a;
+        }
+
+        .expertise-item p {
+            color: #475569;
+            line-height: 1.7;
+            font-size: 1.05rem;
         }
 
         /* CTA */
         .cta-section {
             padding: 8rem 0;
-            background: #F9FAFB;
+            background: #0f172a;
             text-align: center;
         }
 
@@ -496,39 +608,57 @@
             font-size: 3rem;
             font-weight: 900;
             margin-bottom: 2rem;
-            color: #1F2937;
+            color: white;
+            letter-spacing: -0.025em;
         }
 
         .cta-content p {
             font-size: 1.25rem;
-            color: #6B7280;
+            color: #94a3b8;
             margin-bottom: 3rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .cta-content .btn-primary {
+            background: white;
+            color: #0f172a;
+            border: 2px solid white;
+        }
+
+        .cta-content .btn-primary:hover {
+            background: transparent;
+            color: white;
         }
 
         /* Social Links */
         .social-links {
             display: flex;
             justify-content: center;
-            gap: 1rem;
-            margin-top: 1rem;
+            gap: 1.25rem;
+            margin-top: 2rem;
         }
 
         .social-link {
-            background: #2563EB;
-            color: white !important;
-            padding: 0.75rem 1.5rem;
-            border-radius: 8px;
+            background: transparent;
+            color: #94a3b8 !important;
+            padding: 0.875rem 1.75rem;
+            border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
-            transition: background 0.3s ease;
+            font-size: 1rem;
+            transition: all 0.2s ease;
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            border: 1px solid #334155;
         }
 
         .social-link:hover {
-            background: #1D4ED8;
             color: white !important;
+            border-color: #475569;
         }
 
         .social-icon {
@@ -539,51 +669,59 @@
 
         /* Footer */
         footer {
-            padding: 6rem 0 3rem;
-            background: white;
-            border-top: 1px solid #E5E7EB;
+            padding: 8rem 0 4rem;
+            background: #1e293b;
+            color: white;
         }
 
         .footer-content {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 4rem;
+            margin-bottom: 4rem;
         }
 
         .footer-section h3 {
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-            color: #1F2937;
+            margin-bottom: 2rem;
+            font-weight: 800;
+            color: white;
+            font-size: 1.25rem;
         }
 
         .footer-section p,
         .footer-section a {
-            color: #6B7280;
+            color: #94a3b8;
             text-decoration: none;
             line-height: 1.8;
+            font-size: 1rem;
+            transition: color 0.2s ease;
         }
 
         .footer-section a:hover {
-            color: #1F2937;
+            color: white;
         }
 
         .footer-bottom {
             text-align: center;
             padding-top: 3rem;
-            border-top: 1px solid #E5E7EB;
-            color: #6B7280;
+            border-top: 1px solid #334155;
+            color: #64748b;
         }
 
         /* Mobile */
         @media (max-width: 768px) {
             .hero-content {
                 grid-template-columns: 1fr;
-                gap: 3rem;
+                gap: 4rem;
             }
 
             .hero-text h1 {
-                font-size: 2.5rem;
+                font-size: 2.75rem;
+                line-height: 1.15;
+            }
+
+            .section-title {
+                font-size: 2.25rem;
             }
 
             .services-grid {
@@ -606,6 +744,15 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .expertise-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
         }
     </style>
 </head>
@@ -616,10 +763,10 @@
         <div class="nav-container">
             <div class="logo">Executive Content Writer</div>
             <ul class="nav-menu">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="javascript:void(0)" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">Services</a></li>
+                <li><a href="javascript:void(0)" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About</a></li>
             </ul>
-            <a href="https://calendly.com/lewispatrickwaldron" class="nav-cta" target="_blank">Free Personal Branding Audit</a>
+            <a href="https://calendly.com/lewispatrickwaldron" class="nav-cta" target="_blank">Free LinkedIn Strategy Call</a>
         </div>
     </nav>
 
@@ -628,19 +775,19 @@
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <h1>LinkedIn Content Writer for <span class="highlight">Founders & CEOs</span> | Social Media Writer for Startups</h1>
-                    <p class="hero-subtitle">Expert LinkedIn content writer for startup founders and CEOs. Social media writer specializing in executive content marketing, newsletter strategy, and founder LinkedIn writing that drives engagement and growth.</p>
+                    <h1>LinkedIn Content Writer & <span class="highlight">Founder Content Writer</span> | Social Media Writer for Startup CEOs</h1>
+                    <p class="hero-subtitle">Expert <a href="#linkedin-content-guide" style="color: #3b82f6; text-decoration: none; font-weight: 600;">LinkedIn content writer</a> for startup founders and CEOs. <a href="#social-media-ghostwriter" style="color: #3b82f6; text-decoration: none; font-weight: 600;">Social media writer</a> specializing in executive content marketing, newsletter strategy, and <a href="#founder-content-services" style="color: #3b82f6; text-decoration: none; font-weight: 600;">founder LinkedIn writing</a> that drives engagement and growth.</p>
                     
                     <ul class="hero-features">
-                        <li>Direct access to experienced social media writer for founders</li>
-                        <li>Voice capture sessions for authentic startup CEO tone</li>
-                        <li>Proven results across tech, finance, and health sectors</li>
+                        <li>Direct access to experienced <a href="#social-media-ghostwriter" style="color: #94a3b8; text-decoration: none;">social media writer for founders</a></li>
+                        <li>Voice capture sessions for authentic <a href="#startup-ceo-content" style="color: #94a3b8; text-decoration: none;">startup CEO tone</a></li>
+                        <li>Proven results across <a href="#industry-expertise" style="color: #94a3b8; text-decoration: none;">tech, finance, and health sectors</a></li>
                         <li>No long-term contracts or hidden fees</li>
                     </ul>
 
                     <div class="hero-cta">
-                        <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free Personal Branding Audit</a>
-                        <a href="#services" class="btn-secondary">View Services & Pricing</a>
+                        <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free LinkedIn Strategy Call</a>
+                        <a href="javascript:void(0)" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})" class="btn-secondary">View Services & Pricing</a>
                     </div>
                 </div>
 
@@ -669,13 +816,13 @@
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Social Media Writer for Founders & Executive Content Marketing</h2>
-                <p class="section-subtitle">Professional LinkedIn content writing, newsletter strategy, and comprehensive social media services designed for startup founders, CEOs, and executives.</p>
+                <p class="section-subtitle">Professional <a href="#linkedin-content-guide" style="color: #475569; text-decoration: none; font-weight: 600;">LinkedIn content writing</a>, <a href="#newsletter-strategy" style="color: #475569; text-decoration: none; font-weight: 600;">newsletter strategy</a>, and comprehensive <a href="#social-media-ghostwriter" style="color: #475569; text-decoration: none; font-weight: 600;">social media services</a> designed for startup founders, CEOs, and executives.</p>
             </div>
 
             <div class="services-grid">
                 <div class="service-card">
                     <h3 class="service-name">Essential</h3>
-                    <div class="service-price">$2,500<span style="font-size: 1rem; color: #6B7280;">/month</span></div>
+                    <div class="service-price">$2,500<span style="font-size: 1.25rem; color: #64748b;">/month</span></div>
                     <p class="service-description">Perfect for startup founders who need consistent, high-quality LinkedIn content to build their professional presence.</p>
                     
                     <ul class="service-features">
@@ -692,7 +839,7 @@
 
                 <div class="service-card">
                     <h3 class="service-name">Professional</h3>
-                    <div class="service-price">$3,500<span style="font-size: 1rem; color: #6B7280;">/month</span></div>
+                    <div class="service-price">$3,500<span style="font-size: 1.25rem; color: #64748b;">/month</span></div>
                     <p class="service-description">Comprehensive executive content strategy including newsletter writing and multi-platform social media management for CEOs.</p>
                     
                     <ul class="service-features">
@@ -709,7 +856,7 @@
 
                 <div class="service-card">
                     <h3 class="service-name">Enterprise</h3>
-                    <div class="service-price">$5,000<span style="font-size: 1rem; color: #6B7280;">/month</span></div>
+                    <div class="service-price">$5,000<span style="font-size: 1.25rem; color: #64748b;">/month</span></div>
                     <p class="service-description">Complete executive content solution with unlimited writing requests for comprehensive content marketing needs.</p>
                     
                     <ul class="service-features">
@@ -739,13 +886,217 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">LinkedIn Ghostwriter for Founders - FAQ</h2>
+                <p class="section-subtitle">Common questions about executive ghostwriting services, pricing, and results for startup founders and CEOs.</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How much does a LinkedIn ghostwriter for founders cost?</h3>
+                    <p>Professional LinkedIn ghostwriters for startup founders typically charge $2,500-$10,000 per month depending on scope. Our executive ghostwriting services include voice capture sessions, content strategy, and direct founder access - no account managers or outsourcing.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What does a founder content writer do?</h3>
+                    <p>A founder content writer specializes in creating LinkedIn posts, articles, and social media content that positions startup founders as thought leaders. This includes market insights, company updates, leadership lessons, and industry commentary written in the founder's authentic voice.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How to find the best CEO personal brand writer?</h3>
+                    <p>The best CEO personal brand writers have startup experience, proven results with executive clients, and understand your industry's terminology. Look for writers who offer voice capture sessions, direct access (no account managers), and have generated significant engagement for other founders.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What makes a good social media ghostwriter for CEOs?</h3>
+                    <p>The best social media ghostwriters for CEOs understand executive communication patterns, startup terminology, and founder challenges. Look for proven results (like our 40M+ views generated), industry experience, and direct access to the actual writer.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>LinkedIn marketing for founders vs traditional marketing - what's the difference?</h3>
+                    <p>LinkedIn marketing for founders focuses on personal brand building, thought leadership, and direct engagement with investors, customers, and talent. Unlike traditional marketing, it positions the founder as the brand, creating authentic connections that drive business results through relationship-building.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do LinkedIn ghostwriters really work for startup founders?</h3>
+                    <p>Yes - LinkedIn ghostwriters help startup founders save 10-15 hours weekly while building thought leadership. The key is finding a writer who specializes in founder content, understands startup terminology, and can capture your authentic voice.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How long does it take to see results from LinkedIn ghostwriting?</h3>
+                    <p>Most startup founders see initial engagement improvements within 2-4 weeks of consistent LinkedIn content. Building meaningful thought leadership positioning and industry recognition typically develops over 6-12 months of strategic content execution.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What's the ROI of hiring an executive content marketing consultant?</h3>
+                    <p>Executive content marketing consultants help founders attract investors, customers, and top talent through strategic thought leadership. Professional LinkedIn content builds long-term brand equity, establishes industry credibility, and creates opportunities for meaningful business relationships and partnerships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ultimate Guide Section - MASSIVE RANKING POWER -->
+    <section id="linkedin-content-guide" style="padding: 8rem 0; background: white;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">The Complete Guide to LinkedIn Content Writing for Founders</h2>
+                <p class="section-subtitle">Everything startup CEOs need to know about LinkedIn ghostwriting, personal branding, and executive content marketing.</p>
+            </div>
+            
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <div style="display: grid; gap: 3rem;">
+                    <div style="background: #f8fafc; padding: 3rem; border-radius: 12px; border: 2px solid #e2e8f0;">
+                        <h3 style="font-size: 1.625rem; font-weight: 800; margin-bottom: 1.5rem; color: #0f172a;">How Much Does a LinkedIn Ghostwriter Cost? (2025 Pricing Guide)</h3>
+                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.5rem;">LinkedIn ghostwriter pricing varies significantly based on experience and specialization. Entry-level writers charge $500-1,500/month, while experienced executive ghostwriters command $2,500-10,000/month. Premium LinkedIn ghostwriters for Fortune 500 CEOs can charge $15,000+/month.</p>
+                        
+                        <div style="background: white; padding: 2rem; border-radius: 8px; margin: 1.5rem 0;">
+                            <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 1rem;">LinkedIn Ghostwriter Pricing Breakdown:</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 0.5rem 0; color: #475569; position: relative; padding-left: 2rem;">
+                                    <span style="position: absolute; left: 0; color: #10b981; font-weight: 700;">✓</span>
+                                    <strong>Beginner:</strong> $500-1,500/month (1-2 years experience)
+                                </li>
+                                <li style="padding: 0.5rem 0; color: #475569; position: relative; padding-left: 2rem;">
+                                    <span style="position: absolute; left: 0; color: #10b981; font-weight: 700;">✓</span>
+                                    <strong>Experienced:</strong> $2,500-5,000/month (3-5 years, proven results)
+                                </li>
+                                <li style="padding: 0.5rem 0; color: #475569; position: relative; padding-left: 2rem;">
+                                    <span style="position: absolute; left: 0; color: #10b981; font-weight: 700;">✓</span>
+                                    <strong>Expert:</strong> $5,000-10,000/month (5+ years, Fortune 500 clients)
+                                </li>
+                                <li style="padding: 0.5rem 0; color: #475569; position: relative; padding-left: 2rem;">
+                                    <span style="position: absolute; left: 0; color: #10b981; font-weight: 700;">✓</span>
+                                    <strong>Premium:</strong> $10,000+/month (Celebrity CEOs, household names)
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem;">The key factors affecting LinkedIn ghostwriter cost include: industry specialization (FinTech, SaaS, Healthcare), executive level (Founder vs VP vs C-Suite), content volume (posts per week), and additional services (newsletter writing, cross-platform content, media relations).</p>
+                    </div>
+                    
+                    <div style="background: #f8fafc; padding: 3rem; border-radius: 12px; border: 2px solid #e2e8f0;">
+                        <h3 style="font-size: 1.625rem; font-weight: 800; margin-bottom: 1.5rem; color: #0f172a;">Best LinkedIn Content Strategy for Startup CEOs</h3>
+                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.5rem;">Successful LinkedIn content strategy for startup CEOs focuses on thought leadership, industry insights, and authentic storytelling. The most effective CEO LinkedIn strategies combine market commentary, company updates, leadership lessons, and personal experiences to build trust with investors, customers, and talent.</p>
+                        
+                        <div style="background: white; padding: 2rem; border-radius: 8px; margin: 1.5rem 0;">
+                            <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 1rem;">Proven LinkedIn Content Pillars for Founders:</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 0.75rem 0; color: #475569; position: relative; padding-left: 2rem;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: 700;">1.</span>
+                                    <strong>Market Insights:</strong> Industry trends, predictions, analysis (30% of content)
+                                </li>
+                                <li style="padding: 0.75rem 0; color: #475569; position: relative; padding-left: 2rem;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: 700;">2.</span>
+                                    <strong>Company Updates:</strong> Milestones, product launches, team news (20% of content)
+                                </li>
+                                <li style="padding: 0.75rem 0; color: #475569; position: relative; padding-left: 2rem;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: 700;">3.</span>
+                                    <strong>Leadership Lessons:</strong> Management insights, startup advice (25% of content)
+                                </li>
+                                <li style="padding: 0.75rem 0; color: #475569; position: relative; padding-left: 2rem;">
+                                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: 700;">4.</span>
+                                    <strong>Personal Stories:</strong> Founder journey, challenges, wins (25% of content)
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem;">The best LinkedIn content for startup CEOs avoids overly promotional messaging and instead focuses on adding value to the reader's professional development. Posts that perform best include industry analysis, contrarian takes on market trends, behind-the-scenes startup insights, and actionable business advice.</p>
+                    </div>
+                    
+                    <div style="background: #f8fafc; padding: 3rem; border-radius: 12px; border: 2px solid #e2e8f0;">
+                        <h3 style="font-size: 1.625rem; font-weight: 800; margin-bottom: 1.5rem; color: #0f172a;">LinkedIn Ghostwriting vs DIY Content: What's Best for Founders?</h3>
+                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.5rem;">The decision between hiring a LinkedIn ghostwriter versus creating content yourself depends on time availability, writing skills, and business priorities. Most successful startup founders eventually hire professional LinkedIn ghostwriters to maintain consistent thought leadership while focusing on company building.</p>
+                        
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
+                            <div style="background: white; padding: 2rem; border-radius: 8px;">
+                                <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 1rem;">DIY LinkedIn Content</h4>
+                                <div style="margin-bottom: 1.5rem;">
+                                    <strong style="color: #10b981;">Pros:</strong>
+                                    <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Authentic voice guaranteed</li>
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Lower upfront cost</li>
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Complete content control</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong style="color: #ef4444;">Cons:</strong>
+                                    <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• 10-15 hours weekly time investment</li>
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Inconsistent posting schedule</li>
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Limited marketing expertise</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            
+                            <div style="background: white; padding: 2rem; border-radius: 8px;">
+                                <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 1rem;">LinkedIn Ghostwriter</h4>
+                                <div style="margin-bottom: 1.5rem;">
+                                    <strong style="color: #10b981;">Pros:</strong>
+                                    <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Professional content quality</li>
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Consistent posting schedule</li>
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Saves 10-15 hours weekly</li>
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Strategic content planning</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <strong style="color: #ef4444;">Cons:</strong>
+                                    <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Monthly investment required</li>
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Finding quality writers</li>
+                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Voice matching process</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem;">Most startup founders start with DIY LinkedIn content but transition to professional ghostwriters once they reach Series A funding or 50+ employees. The time saved allows founders to focus on product development, fundraising, and team building while maintaining strong thought leadership presence.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="expertise-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Specialized LinkedIn Ghostwriter for Tech Founders</h2>
+                <p class="section-subtitle">Expert executive ghostwriting across major startup verticals and global markets.</p>
+            </div>
+            
+            <div class="expertise-grid">
+                <div class="expertise-item">
+                    <h3>SaaS & Enterprise Software</h3>
+                    <p>LinkedIn ghostwriting for SaaS founders focusing on product-led growth insights, customer success stories, and B2B market positioning that resonates with enterprise clients.</p>
+                </div>
+                
+                <div class="expertise-item">
+                    <h3>FinTech & Financial Services</h3>
+                    <p>Executive ghostwriting for FinTech CEOs who need content that builds trust with enterprise financial institutions while navigating regulatory compliance requirements.</p>
+                </div>
+                
+                <div class="expertise-item">
+                    <h3>Healthcare & Life Sciences</h3>
+                    <p>Specialized LinkedIn content for healthcare startup founders that emphasizes clinical validation, patient outcomes, and healthcare innovation for medical professionals.</p>
+                </div>
+                
+                <div class="expertise-item">
+                    <h3>Global Markets & Remote Teams</h3>
+                    <p>LinkedIn ghostwriter serving founders worldwide - Silicon Valley, New York, London, Toronto - with expertise in remote work culture and international expansion.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CTA -->
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Elevate Your Founder Personal Brand?</h2>
-                <p>Get professional LinkedIn content writing and executive social media strategy that positions you as an industry leader.</p>
-                <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free Personal Branding Audit</a>
+                <h2>Ready to Dominate LinkedIn as a Startup Founder?</h2>
+                <p>Get a free LinkedIn strategy session to discuss your executive content goals, understand our approach to founder thought leadership, and explore whether professional LinkedIn content writing aligns with your long-term business strategy.</p>
+                <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free LinkedIn Strategy Call</a>
             </div>
         </div>
     </section>
@@ -784,7 +1135,7 @@
                             X (Twitter)
                         </a>
                     </div>
-                    <p style="margin-top: 1rem;"><a href="https://calendly.com/lewispatrickwaldron" target="_blank">Book Free Audit</a></p>
+                    <p style="margin-top: 2rem;"><a href="https://calendly.com/lewispatrickwaldron" target="_blank">Book Free Strategy Call</a></p>
                 </div>
             </div>
             
