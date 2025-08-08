@@ -213,6 +213,65 @@
             color: #0f172a;
         }
 
+        /* Dropdown Styles */
+        .nav-dropdown {
+            position: relative;
+        }
+
+        .dropdown-content {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: white;
+            min-width: 280px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 1rem 0;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(-10px);
+            transition: all 0.2s ease;
+            z-index: 1001;
+        }
+
+        .nav-dropdown:hover .dropdown-content {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .dropdown-content a {
+            display: block;
+            padding: 0.75rem 1.5rem;
+            color: #475569;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .dropdown-content a:hover {
+            background: #f8fafc;
+            color: #0f172a;
+        }
+
+        .dropdown-content .dropdown-category {
+            padding: 0.5rem 1.5rem;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 1rem;
+            border-top: 1px solid #f1f5f9;
+        }
+
+        .dropdown-content .dropdown-category:first-child {
+            margin-top: 0;
+            border-top: none;
+        }
+
         .nav-cta {
             background: #0f172a;
             color: white;
@@ -388,6 +447,56 @@
             text-transform: uppercase;
             letter-spacing: 1px;
             font-weight: 600;
+        }
+
+        /* Resource Links Section */
+        .resources-section {
+            padding: 6rem 0;
+            background: white;
+        }
+
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .resource-card {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2.5rem;
+            transition: all 0.2s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .resource-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .resource-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+
+        .resource-description {
+            color: #475569;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .resource-cta {
+            color: #3b82f6;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         /* Services */
@@ -750,8 +859,27 @@
                 gap: 3rem;
             }
 
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+
             .container {
                 padding: 0 1.5rem;
+            }
+
+            .dropdown-content {
+                position: static;
+                opacity: 1;
+                visibility: visible;
+                transform: none;
+                box-shadow: none;
+                border: none;
+                padding: 0;
+                background: transparent;
+            }
+
+            .nav-dropdown:hover .dropdown-content {
+                display: block;
             }
         }
     </style>
@@ -763,8 +891,18 @@
         <div class="nav-container">
             <div class="logo">Executive Content Writer</div>
             <ul class="nav-menu">
-                <li><a href="javascript:void(0)" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">Services</a></li>
-                <li><a href="javascript:void(0)" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li class="nav-dropdown">
+                    <a href="#resources">Resources</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-category">Strategy Guides</div>
+                        <a href="linkedin-strategy-startup-ceos.html">LinkedIn Strategy for Startup CEOs</a>
+                        <a href="linkedin-ghostwriting-vs-diy.html">Ghostwriting vs DIY Guide</a>
+                        <div class="dropdown-category">Industry Specialization</div>
+                        <a href="fintech-founder-linkedin-content.html">FinTech Founder Content</a>
+                    </div>
+                </li>
+                <li><a href="#about">About</a></li>
             </ul>
             <a href="https://calendly.com/lewispatrickwaldron" class="nav-cta" target="_blank">Free LinkedIn Strategy Call</a>
         </div>
@@ -776,18 +914,18 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>LinkedIn Content Writer & <span class="highlight">Founder Content Writer</span> | Social Media Writer for Startup CEOs</h1>
-                    <p class="hero-subtitle">Expert <a href="#linkedin-content-guide" style="color: #3b82f6; text-decoration: none; font-weight: 600;">LinkedIn content writer</a> for startup founders and CEOs. <a href="#social-media-ghostwriter" style="color: #3b82f6; text-decoration: none; font-weight: 600;">Social media writer</a> specializing in executive content marketing, newsletter strategy, and <a href="#founder-content-services" style="color: #3b82f6; text-decoration: none; font-weight: 600;">founder LinkedIn writing</a> that drives engagement and growth.</p>
+                    <p class="hero-subtitle">Expert LinkedIn content writer for startup founders and CEOs. Social media writer specializing in executive content marketing, newsletter strategy, and founder LinkedIn writing that drives engagement and growth.</p>
                     
                     <ul class="hero-features">
-                        <li>Direct access to experienced <a href="#social-media-ghostwriter" style="color: #94a3b8; text-decoration: none;">social media writer for founders</a></li>
-                        <li>Voice capture sessions for authentic <a href="#startup-ceo-content" style="color: #94a3b8; text-decoration: none;">startup CEO tone</a></li>
-                        <li>Proven results across <a href="#industry-expertise" style="color: #94a3b8; text-decoration: none;">tech, finance, and health sectors</a></li>
+                        <li>Direct access to experienced social media writer for founders</li>
+                        <li>Voice capture sessions for authentic startup CEO tone</li>
+                        <li>Proven results across tech, finance, and health sectors</li>
                         <li>No long-term contracts or hidden fees</li>
                     </ul>
 
                     <div class="hero-cta">
                         <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free LinkedIn Strategy Call</a>
-                        <a href="javascript:void(0)" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})" class="btn-secondary">View Services & Pricing</a>
+                        <a href="#services" class="btn-secondary">View Services & Pricing</a>
                     </div>
                 </div>
 
@@ -811,12 +949,42 @@
         </div>
     </section>
 
+    <!-- Resources Section -->
+    <section class="resources-section" id="resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">LinkedIn Strategy Resources for Startup CEOs</h2>
+                <p class="section-subtitle">Comprehensive guides and strategies to help startup founders build thought leadership and attract investors through strategic LinkedIn content.</p>
+            </div>
+            
+            <div class="resources-grid">
+                <a href="linkedin-strategy-startup-ceos.html" class="resource-card">
+                    <h3 class="resource-title">LinkedIn Strategy for Startup CEOs</h3>
+                    <p class="resource-description">Complete 4-pillar framework for building thought leadership on LinkedIn. Learn the proven strategy that positions startup founders as industry experts and attracts investors.</p>
+                    <div class="resource-cta">Read Strategy Guide →</div>
+                </a>
+                
+                <a href="fintech-founder-linkedin-content.html" class="resource-card">
+                    <h3 class="resource-title">FinTech Founder LinkedIn Content</h3>
+                    <p class="resource-description">Specialized LinkedIn content strategy for financial services startups. Navigate regulatory requirements while building trust and attracting enterprise customers.</p>
+                    <div class="resource-cta">Explore FinTech Guide →</div>
+                </a>
+                
+                <a href="linkedin-ghostwriting-vs-diy.html" class="resource-card">
+                    <h3 class="resource-title">Ghostwriting vs DIY: Complete Guide</h3>
+                    <p class="resource-description">Detailed comparison of professional LinkedIn ghostwriting versus DIY content creation. Learn costs, time investment, and which approach works best for CEOs.</p>
+                    <div class="resource-cta">Compare Options →</div>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Services -->
     <section class="services" id="services">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Social Media Writer for Founders & Executive Content Marketing</h2>
-                <p class="section-subtitle">Professional <a href="#linkedin-content-guide" style="color: #475569; text-decoration: none; font-weight: 600;">LinkedIn content writing</a>, <a href="#newsletter-strategy" style="color: #475569; text-decoration: none; font-weight: 600;">newsletter strategy</a>, and comprehensive <a href="#social-media-ghostwriter" style="color: #475569; text-decoration: none; font-weight: 600;">social media services</a> designed for startup founders, CEOs, and executives.</p>
+                <p class="section-subtitle">Professional LinkedIn content writing, newsletter strategy, and comprehensive social media services designed for startup founders, CEOs, and executives.</p>
             </div>
 
             <div class="services-grid">
@@ -882,6 +1050,8 @@
                 <p>As a dedicated LinkedIn content writer for startup founders and CEOs, I understand that executive social media needs are different from typical business content. CEO social media strategy requires a specialized approach that balances authority with authenticity.</p>
                 
                 <p>I personally handle every voice capture session, write every piece of content, and manage every client relationship. No account managers, no outsourcing, no generic templates. When you work with me, you get direct access to an experienced social media writer for founders who understands startup content marketing.</p>
+                
+                <p>Need help deciding between <a href="linkedin-ghostwriting-vs-diy.html" style="color: #3b82f6; text-decoration: none;">professional ghostwriting vs DIY</a>? Or looking for specialized <a href="fintech-founder-linkedin-content.html" style="color: #3b82f6; text-decoration: none;">FinTech founder content strategy</a>? Explore our comprehensive resources to make the right decision for your startup.</p>
             </div>
         </div>
     </section>
@@ -897,12 +1067,12 @@
             <div class="faq-grid">
                 <div class="faq-item">
                     <h3>How much does a LinkedIn ghostwriter for founders cost?</h3>
-                    <p>Professional LinkedIn ghostwriters for startup founders typically charge $2,500-$10,000 per month depending on scope. Our executive ghostwriting services include voice capture sessions, content strategy, and direct founder access - no account managers or outsourcing.</p>
+                    <p>Professional LinkedIn ghostwriters for startup founders typically charge $2,500-$10,000 per month depending on scope. Our executive ghostwriting services include voice capture sessions, content strategy, and direct founder access - no account managers or outsourcing. <a href="linkedin-ghostwriting-vs-diy.html" style="color: #3b82f6; text-decoration: none;">Compare ghostwriting vs DIY approaches</a> to find the right fit.</p>
                 </div>
                 
                 <div class="faq-item">
                     <h3>What does a founder content writer do?</h3>
-                    <p>A founder content writer specializes in creating LinkedIn posts, articles, and social media content that positions startup founders as thought leaders. This includes market insights, company updates, leadership lessons, and industry commentary written in the founder's authentic voice.</p>
+                    <p>A founder content writer specializes in creating LinkedIn posts, articles, and social media content that positions startup founders as thought leaders. This includes market insights, company updates, leadership lessons, and industry commentary written in the founder's authentic voice. Learn our proven <a href="linkedin-strategy-startup-ceos.html" style="color: #3b82f6; text-decoration: none;">4-pillar LinkedIn strategy framework</a>.</p>
                 </div>
                 
                 <div class="faq-item">
@@ -922,7 +1092,7 @@
                 
                 <div class="faq-item">
                     <h3>Do LinkedIn ghostwriters really work for startup founders?</h3>
-                    <p>Yes - LinkedIn ghostwriters help startup founders save 10-15 hours weekly while building thought leadership. The key is finding a writer who specializes in founder content, understands startup terminology, and can capture your authentic voice.</p>
+                    <p>Yes - LinkedIn ghostwriters help startup founders save 10-15 hours weekly while building thought leadership. The key is finding a writer who specializes in founder content, understands startup terminology, and can capture your authentic voice. <a href="linkedin-ghostwriting-vs-diy.html" style="color: #3b82f6; text-decoration: none;">See our detailed comparison</a> of approaches.</p>
                 </div>
                 
                 <div class="faq-item">
@@ -938,127 +1108,7 @@
         </div>
     </section>
 
-    <!-- Ultimate Guide Section - MASSIVE RANKING POWER -->
-    <section id="linkedin-content-guide" style="padding: 8rem 0; background: white;">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">The Complete Guide to LinkedIn Content Writing for Founders</h2>
-                <p class="section-subtitle">Everything startup CEOs need to know about LinkedIn ghostwriting, personal branding, and executive content marketing.</p>
-            </div>
-            
-            <div style="max-width: 1000px; margin: 0 auto;">
-                <div style="display: grid; gap: 3rem;">
-                    <div style="background: #f8fafc; padding: 3rem; border-radius: 12px; border: 2px solid #e2e8f0;">
-                        <h3 style="font-size: 1.625rem; font-weight: 800; margin-bottom: 1.5rem; color: #0f172a;">How Much Does a LinkedIn Ghostwriter Cost? (2025 Pricing Guide)</h3>
-                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.5rem;">LinkedIn ghostwriter pricing varies significantly based on experience and specialization. Entry-level writers charge $500-1,500/month, while experienced executive ghostwriters command $2,500-10,000/month. Premium LinkedIn ghostwriters for Fortune 500 CEOs can charge $15,000+/month.</p>
-                        
-                        <div style="background: white; padding: 2rem; border-radius: 8px; margin: 1.5rem 0;">
-                            <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 1rem;">LinkedIn Ghostwriter Pricing Breakdown:</h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="padding: 0.5rem 0; color: #475569; position: relative; padding-left: 2rem;">
-                                    <span style="position: absolute; left: 0; color: #10b981; font-weight: 700;">✓</span>
-                                    <strong>Beginner:</strong> $500-1,500/month (1-2 years experience)
-                                </li>
-                                <li style="padding: 0.5rem 0; color: #475569; position: relative; padding-left: 2rem;">
-                                    <span style="position: absolute; left: 0; color: #10b981; font-weight: 700;">✓</span>
-                                    <strong>Experienced:</strong> $2,500-5,000/month (3-5 years, proven results)
-                                </li>
-                                <li style="padding: 0.5rem 0; color: #475569; position: relative; padding-left: 2rem;">
-                                    <span style="position: absolute; left: 0; color: #10b981; font-weight: 700;">✓</span>
-                                    <strong>Expert:</strong> $5,000-10,000/month (5+ years, Fortune 500 clients)
-                                </li>
-                                <li style="padding: 0.5rem 0; color: #475569; position: relative; padding-left: 2rem;">
-                                    <span style="position: absolute; left: 0; color: #10b981; font-weight: 700;">✓</span>
-                                    <strong>Premium:</strong> $10,000+/month (Celebrity CEOs, household names)
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem;">The key factors affecting LinkedIn ghostwriter cost include: industry specialization (FinTech, SaaS, Healthcare), executive level (Founder vs VP vs C-Suite), content volume (posts per week), and additional services (newsletter writing, cross-platform content, media relations).</p>
-                    </div>
-                    
-                    <div style="background: #f8fafc; padding: 3rem; border-radius: 12px; border: 2px solid #e2e8f0;">
-                        <h3 style="font-size: 1.625rem; font-weight: 800; margin-bottom: 1.5rem; color: #0f172a;">Best LinkedIn Content Strategy for Startup CEOs</h3>
-                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.5rem;">Successful LinkedIn content strategy for startup CEOs focuses on thought leadership, industry insights, and authentic storytelling. The most effective CEO LinkedIn strategies combine market commentary, company updates, leadership lessons, and personal experiences to build trust with investors, customers, and talent.</p>
-                        
-                        <div style="background: white; padding: 2rem; border-radius: 8px; margin: 1.5rem 0;">
-                            <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 1rem;">Proven LinkedIn Content Pillars for Founders:</h4>
-                            <ul style="list-style: none; padding: 0;">
-                                <li style="padding: 0.75rem 0; color: #475569; position: relative; padding-left: 2rem;">
-                                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: 700;">1.</span>
-                                    <strong>Market Insights:</strong> Industry trends, predictions, analysis (30% of content)
-                                </li>
-                                <li style="padding: 0.75rem 0; color: #475569; position: relative; padding-left: 2rem;">
-                                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: 700;">2.</span>
-                                    <strong>Company Updates:</strong> Milestones, product launches, team news (20% of content)
-                                </li>
-                                <li style="padding: 0.75rem 0; color: #475569; position: relative; padding-left: 2rem;">
-                                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: 700;">3.</span>
-                                    <strong>Leadership Lessons:</strong> Management insights, startup advice (25% of content)
-                                </li>
-                                <li style="padding: 0.75rem 0; color: #475569; position: relative; padding-left: 2rem;">
-                                    <span style="position: absolute; left: 0; color: #3b82f6; font-weight: 700;">4.</span>
-                                    <strong>Personal Stories:</strong> Founder journey, challenges, wins (25% of content)
-                                </li>
-                            </ul>
-                        </div>
-                        
-                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem;">The best LinkedIn content for startup CEOs avoids overly promotional messaging and instead focuses on adding value to the reader's professional development. Posts that perform best include industry analysis, contrarian takes on market trends, behind-the-scenes startup insights, and actionable business advice.</p>
-                    </div>
-                    
-                    <div style="background: #f8fafc; padding: 3rem; border-radius: 12px; border: 2px solid #e2e8f0;">
-                        <h3 style="font-size: 1.625rem; font-weight: 800; margin-bottom: 1.5rem; color: #0f172a;">LinkedIn Ghostwriting vs DIY Content: What's Best for Founders?</h3>
-                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem; margin-bottom: 1.5rem;">The decision between hiring a LinkedIn ghostwriter versus creating content yourself depends on time availability, writing skills, and business priorities. Most successful startup founders eventually hire professional LinkedIn ghostwriters to maintain consistent thought leadership while focusing on company building.</p>
-                        
-                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2rem 0;">
-                            <div style="background: white; padding: 2rem; border-radius: 8px;">
-                                <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 1rem;">DIY LinkedIn Content</h4>
-                                <div style="margin-bottom: 1.5rem;">
-                                    <strong style="color: #10b981;">Pros:</strong>
-                                    <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Authentic voice guaranteed</li>
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Lower upfront cost</li>
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Complete content control</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <strong style="color: #ef4444;">Cons:</strong>
-                                    <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• 10-15 hours weekly time investment</li>
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Inconsistent posting schedule</li>
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Limited marketing expertise</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                            <div style="background: white; padding: 2rem; border-radius: 8px;">
-                                <h4 style="font-weight: 700; color: #0f172a; margin-bottom: 1rem;">LinkedIn Ghostwriter</h4>
-                                <div style="margin-bottom: 1.5rem;">
-                                    <strong style="color: #10b981;">Pros:</strong>
-                                    <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Professional content quality</li>
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Consistent posting schedule</li>
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Saves 10-15 hours weekly</li>
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Strategic content planning</li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <strong style="color: #ef4444;">Cons:</strong>
-                                    <ul style="list-style: none; padding: 0; margin-top: 0.5rem;">
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Monthly investment required</li>
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Finding quality writers</li>
-                                        <li style="padding: 0.25rem 0; color: #475569; font-size: 0.95rem;">• Voice matching process</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <p style="color: #475569; line-height: 1.7; font-size: 1.05rem;">Most startup founders start with DIY LinkedIn content but transition to professional ghostwriters once they reach Series A funding or 50+ employees. The time saved allows founders to focus on product development, fundraising, and team building while maintaining strong thought leadership presence.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Expertise Section -->
     <section class="expertise-section">
         <div class="container">
             <div class="section-header">
@@ -1074,7 +1124,7 @@
                 
                 <div class="expertise-item">
                     <h3>FinTech & Financial Services</h3>
-                    <p>Executive ghostwriting for FinTech CEOs who need content that builds trust with enterprise financial institutions while navigating regulatory compliance requirements.</p>
+                    <p>Executive ghostwriting for FinTech CEOs who need content that builds trust with enterprise financial institutions while navigating regulatory compliance requirements. <a href="fintech-founder-linkedin-content.html" style="color: #3b82f6; text-decoration: none;">Learn about specialized FinTech content strategy</a>.</p>
                 </div>
                 
                 <div class="expertise-item">
@@ -1116,6 +1166,13 @@
                     <p>Social Media Writer for Founders</p>
                     <p>Newsletter Writer for Executives</p>
                     <p>CEO Content Strategy</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <p><a href="linkedin-strategy-startup-ceos.html">CEO LinkedIn Strategy Guide</a></p>
+                    <p><a href="fintech-founder-linkedin-content.html">FinTech Content Strategy</a></p>
+                    <p><a href="linkedin-ghostwriting-vs-diy.html">Ghostwriting vs DIY Guide</a></p>
                 </div>
                 
                 <div class="footer-section">
