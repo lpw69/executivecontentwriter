@@ -487,10 +487,11 @@
             <div class="logo">Executive Content Writer</div>
             <ul class="nav-menu">
                 <li><a href="#services">Services</a></li>
-                <li><a href="/blog/">Blog</a></li>
                 <li class="nav-dropdown">
                     <a href="#resources">Resources</a>
                     <div class="dropdown-content">
+                        <div class="dropdown-category">Latest Insights</div>
+                        <a href="linkedin-content-writer-vs-social-media-manager.html">LinkedIn Writer vs Social Media Manager</a>
                         <div class="dropdown-category">Strategy Guides</div>
                         <a href="linkedin-strategy-startup-ceos.html">LinkedIn Strategy for Startup CEOs</a>
                         <a href="linkedin-ghostwriting-vs-diy.html">Ghostwriting vs DIY Guide</a>
@@ -563,7 +564,7 @@
                     top: 100%;
                     left: 0;
                     background: white;
-                    min-width: 280px;
+                    min-width: 320px;
                     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
                     border: 1px solid #e2e8f0;
                     border-radius: 8px;
@@ -685,6 +686,25 @@
                     border-color: #3b82f6;
                     transform: translateY(-4px);
                     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+                }
+
+                .resource-card.featured {
+                    border-color: #3b82f6;
+                    background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%);
+                    position: relative;
+                }
+
+                .resource-card.featured::before {
+                    content: '🔥 NEW';
+                    position: absolute;
+                    top: -10px;
+                    right: 20px;
+                    background: #ef4444;
+                    color: white;
+                    padding: 5px 12px;
+                    border-radius: 12px;
+                    font-size: 0.75rem;
+                    font-weight: 700;
                 }
 
                 .resource-title {
@@ -850,11 +870,6 @@
                 }
 
                 /* FAQ Section */
-                .faq-section {
-                    padding: 8rem 0;
-                    background: #f8fafc;
-                }
-
                 .faq-grid {
                     max-width: 1000px;
                     margin: 0 auto;
@@ -1010,7 +1025,7 @@
                 .footer-section p,
                 .footer-section a {
                     color: #94a3b8;
-                    text-decoration: underline; /* Added for accessibility */
+                    text-decoration: underline;
                     line-height: 1.8;
                     font-size: 1rem;
                     transition: color 0.2s ease;
@@ -1084,6 +1099,13 @@
             </div>
             
             <div class="resources-grid">
+                <!-- NEW ARTICLE - Featured -->
+                <a href="linkedin-content-writer-vs-social-media-manager.html" class="resource-card featured">
+                    <h3 class="resource-title">LinkedIn Content Writer vs Social Media Manager</h3>
+                    <p class="resource-description">Why startup founders choose LinkedIn content specialists over general social media managers. Learn the key differences and why specialization matters for executive authority building.</p>
+                    <div class="resource-cta">Read Latest Article →</div>
+                </a>
+                
                 <a href="linkedin-strategy-startup-ceos.html" class="resource-card">
                     <h3 class="resource-title">LinkedIn Strategy for Startup CEOs</h3>
                     <p class="resource-description">Complete 4-pillar framework for building thought leadership on LinkedIn. Learn the proven strategy that positions startup founders as industry experts and attracts investors.</p>
@@ -1100,6 +1122,18 @@
                     <h3 class="resource-title">Ghostwriting vs DIY: Complete Guide</h3>
                     <p class="resource-description">Detailed comparison of professional LinkedIn ghostwriting versus DIY content creation. Learn costs, time investment, and which approach works best for CEOs.</p>
                     <div class="resource-cta">Compare Options →</div>
+                </a>
+                
+                <a href="cybersecurity-founder-ghostwriter.html" class="resource-card">
+                    <h3 class="resource-title">Cybersecurity Founder Ghostwriting</h3>
+                    <p class="resource-description">Specialized LinkedIn content for cybersecurity startup founders that demonstrates technical credibility while remaining accessible to investors and customers.</p>
+                    <div class="resource-cta">Learn Cybersecurity Strategy →</div>
+                </a>
+                
+                <a href="series-a-linkedin-writer.html" class="resource-card">
+                    <h3 class="resource-title">Series A LinkedIn Strategy</h3>
+                    <p class="resource-description">LinkedIn content strategy for Series A founders during critical growth phases. Build thought leadership that attracts top talent, customers, and investors.</p>
+                    <div class="resource-cta">Explore Series A Guide →</div>
                 </a>
             </div>
         </div>
@@ -1296,6 +1330,7 @@
                 
                 <div class="footer-section">
                     <h3>Resources</h3>
+                    <p><a href="linkedin-content-writer-vs-social-media-manager.html">LinkedIn Writer vs Social Media Manager</a></p>
                     <p><a href="linkedin-strategy-startup-ceos.html">CEO LinkedIn Strategy Guide</a></p>
                     <p><a href="fintech-founder-linkedin-content.html">FinTech Content Strategy</a></p>
                     <p><a href="linkedin-ghostwriting-vs-diy.html">Ghostwriting vs DIY Guide</a></p>
@@ -1380,9 +1415,6 @@
                 });
             });
         }
-
-
     </script>
 </body>
 </html>
-                    
