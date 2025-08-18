@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Writer | Professional Writing Services for Business Leaders</title>
+    <meta name="description" content="Professional executive writer specializing in LinkedIn content, newsletters, and thought leadership for CEOs, founders, and C-suite executives. Intelligence background, proven results.">
+    <meta name="keywords" content="executive writer, executive writing services, ceo writer, c-suite writer, executive communications">
+    <link rel="canonical" href="https://executivecontentwriter.com/executive-writer.html">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "name": "Executive Writer Services",
+      "description": "Professional executive writing services for CEOs, founders, and C-suite executives.",
+      "provider": {
+        "@type": "Person",
+        "name": "Lewis Patrick"
+      },
+      "serviceType": "Executive Writing",
+      "priceRange": "$2500-$5000"
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #ffffff;
+            color: #0f172a;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Header */
+        .header {
+            padding: 4rem 0 2rem;
+            text-align: center;
+            background: #f8fafc;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+
+        .header .highlight {
+            color: #3b82f6;
+        }
+
+        .header p {
+            font-size: 1.25rem;
+            color: #475569;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+
+        .header-cta {
+            margin-top: 2rem;
+        }
+
+        .btn-primary {
+            background: #0f172a;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            border: 2px solid #0f172a;
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: #0f172a;
+        }
+
+        /* What Section */
+        .what-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .what-section h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            color: #0f172a;
+        }
+
+        .what-section p {
+            color: #475569;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* Services */
+        .services-section {
+            padding: 4rem 0;
+            background: #f8fafc;
+        }
+
+        .services-section h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: #0f172a;
+            text-align: center;
+        }
+
+        .services-section .subtitle {
+            text-align: center;
+            color: #475569;
+            margin-bottom: 3rem;
+            font-size: 1.1rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            color: #0f172a;
+        }
+
+        .service-price {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #3b82f6;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            color: #475569;
+            margin-bottom: 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .service-features {
+            list-style: none;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .service-features li {
+            padding: 0.5rem 0;
+            color: #475569;
+            position: relative;
+            padding-left: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        .service-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: 700;
+        }
+
+        .service-btn {
+            background: #0f172a;
+            color: white;
+            padding: 0.875rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            border: 2px solid #0f172a;
+        }
+
+        .service-btn:hover {
+            background: transparent;
+            color: #0f172a;
+        }
+
+        /* Why Choose */
+        .why-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .why-section h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            color: #0f172a;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .why-item {
+            padding: 1.5rem;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+        }
+
+        .why-item h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+
+        .why-item p {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        /* CTA */
+        .cta-section {
+            padding: 4rem 0;
+            background: #0f172a;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .cta-section p {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            margin-bottom: 2rem;
+        }
+
+        .cta-section .btn-primary {
+            background: white;
+            color: #0f172a;
+            border: 2px solid white;
+        }
+
+        .cta-section .btn-primary:hover {
+            background: transparent;
+            color: white;
+        }
+
+        /* Back Link */
+        .back-link {
+            padding: 2rem 0;
+            text-align: center;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .back-link a {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2.25rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="header">
+        <div class="container">
+            <h1>Executive <span class="highlight">Writer</span></h1>
+            <p>Professional writing services for CEOs, founders, and C-suite executives. LinkedIn content, newsletters, and thought leadership that builds authority and drives results.</p>
+            <div class="header-cta">
+                <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free Strategy Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is Executive Writer -->
+    <section class="what-section">
+        <div class="container">
+            <h2>What is an Executive Writer?</h2>
+            <p>An executive writer is a specialized professional who creates strategic content specifically for business leaders, CEOs, and C-suite executives. Unlike general business writers, executive writers understand the unique communication needs of senior leadership, including thought leadership positioning, stakeholder communications, and industry-specific expertise.</p>
+            
+            <p>As your executive writer, I focus on creating LinkedIn content, executive newsletters, and strategic communications that position you as an industry authority while saving you 10-15 hours per week. With an intelligence and cybersecurity background, I bring unique expertise to technology sectors while maintaining the strategic perspective required for executive-level communication.</p>
+            
+            <p>Executive writing goes beyond simple content creation - it encompasses voice capture, strategic messaging, and reputation management that supports your broader business objectives and personal brand goals.</p>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-section">
+        <div class="container">
+            <h2>Executive Writer Services & Pricing</h2>
+            <p class="subtitle">Professional executive writing packages designed for busy leaders</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Essential</h3>
+                    <div class="service-price">$2,500<span style="font-size: 1rem; color: #64748b;">/month</span></div>
+                    <p>Perfect for executives who need consistent, high-quality content to build thought leadership.</p>
+                    
+                    <ul class="service-features">
+                        <li>LinkedIn content (3-5 posts weekly)</li>
+                        <li>90-minute voice capture session</li>
+                        <li>Bi-weekly strategy calls</li>
+                        <li>Direct writer access</li>
+                        <li>Content calendar & scheduling</li>
+                        <li>Performance tracking</li>
+                    </ul>
+
+                    <a href="https://calendly.com/lewispatrickwaldron" class="service-btn" target="_blank">Get Started</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Professional</h3>
+                    <div class="service-price">$3,500<span style="font-size: 1rem; color: #64748b;">/month</span></div>
+                    <p>Comprehensive executive content strategy including newsletters and multi-platform content.</p>
+                    
+                    <ul class="service-features">
+                        <li>Everything in Essential</li>
+                        <li>Executive newsletter setup</li>
+                        <li>Strategic commenting (50+ daily)</li>
+                        <li>Cross-platform strategy</li>
+                        <li>Monthly performance reviews</li>
+                        <li>Thought leadership positioning</li>
+                    </ul>
+
+                    <a href="https://calendly.com/lewispatrickwaldron" class="service-btn" target="_blank">Choose Professional</a>
+                </div>
+
+                <div class="service-card">
+                    <h3>Enterprise</h3>
+                    <div class="service-price">$5,000<span style="font-size: 1rem; color: #64748b;">/month</span></div>
+                    <p>Complete executive writing solution with unlimited requests for comprehensive needs.</p>
+                    
+                    <ul class="service-features">
+                        <li>Everything in Professional</li>
+                        <li>Unlimited writing requests</li>
+                        <li>Priority 48-hour turnaround</li>
+                        <li>Weekly strategy sessions</li>
+                        <li>Advanced LinkedIn optimization</li>
+                        <li>Executive brand consulting</li>
+                    </ul>
+
+                    <a href="https://calendly.com/lewispatrickwaldron" class="service-btn" target="_blank">Get Enterprise</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose -->
+    <section class="why-section">
+        <div class="container">
+            <h2>Why Choose a Specialized Executive Writer?</h2>
+            <p>Executive communication requires a different approach than general business writing. Here's what sets professional executive writers apart:</p>
+
+            <div class="why-grid">
+                <div class="why-item">
+                    <h3>Industry Expertise</h3>
+                    <p>Intelligence and cybersecurity background brings credibility to technology sectors and complex industries.</p>
+                </div>
+
+                <div class="why-item">
+                    <h3>Executive Voice Capture</h3>
+                    <p>Comprehensive process to understand your communication style, expertise, and strategic objectives.</p>
+                </div>
+
+                <div class="why-item">
+                    <h3>Strategic Positioning</h3>
+                    <p>Content that positions you as an industry authority while supporting business development goals.</p>
+                </div>
+
+                <div class="why-item">
+                    <h3>Time Efficiency</h3>
+                    <p>Save 10-15 hours weekly while maintaining consistent, high-quality executive presence.</p>
+                </div>
+
+                <div class="why-item">
+                    <h3>Direct Access</h3>
+                    <p>Work directly with your writer - no account managers, outsourcing, or generic templates.</p>
+                </div>
+
+                <div class="why-item">
+                    <h3>Proven Results</h3>
+                    <p>40M+ views generated for executives across technology, finance, and emerging sectors.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Work with an Executive Writer?</h2>
+            <p>Get a free strategy session to discuss your executive content goals and explore how professional writing services can accelerate your thought leadership.</p>
+            <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free Strategy Call</a>
+        </div>
+    </section>
+
+    <!-- Back to Main Site -->
+    <section class="back-link">
+        <div class="container">
+            <p><a href="/">← Back to Executive Content Writer</a> | <a href="/executive-content-writer-guide.html">Learn More About Executive Content Writers</a></p>
+        </div>
+    </section>
+</body>
+</html>
