@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Writer | Executive Content Writing Services for Founders & CEOs</title>
+    <meta name="description" content="Professional content writer specializing in executive content, LinkedIn writing, and thought leadership for startup founders, CEOs, and technology leaders. Expert content writing services.">
+    <meta name="keywords" content="content writer, professional content writer, executive content writer, content writing services, startup content writer, CEO content writer, business content writer, freelance content writer">
+    <link rel="canonical" href="https://executivecontentwriter.com/content-writer.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Content Writer | Executive Content Writing Services">
+    <meta property="og:description" content="Professional content writer specializing in executive content, LinkedIn writing, and thought leadership for startup founders and technology leaders.">
+    <meta property="og:url" content="https://executivecontentwriter.com/content-writer.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Content Writer Services",
+      "description": "Professional content writing services for executives, founders, and technology leaders. Specializing in LinkedIn content, thought leadership, and business communication.",
+      "provider": {
+        "@type": "Person",
+        "name": "Lewis Patrick",
+        "hasCredential": "Intelligence & Cybersecurity Background",
+        "expertise": ["Content Writing", "Executive Content", "LinkedIn Writing", "Thought Leadership Content", "Business Communication"]
+      },
+      "serviceType": "Content Writing",
+      "areaServed": ["Global", "United States", "Europe", "San Francisco", "New York"],
+      "priceRange": "$2500-$8000",
+      "url": "https://executivecontentwriter.com/content-writer.html"
+    }
+    </script>
+    
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does a content writer do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A content writer creates written content for businesses including blog posts, articles, social media content, website copy, and marketing materials. Executive content writers specialize in thought leadership and professional content for business leaders."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a professional content writer cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Content writer pricing varies by specialization and scope. General content writers charge $500-$3,000 monthly, while executive content writers typically charge $2,500-$8,000 monthly for specialized business leadership content."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What's the difference between a content writer and copywriter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Content writers focus on informational and educational content like blog posts and articles, while copywriters create persuasive sales and marketing copy. Executive content writers specialize in thought leadership and professional relationship building."
+          }
+        }
+      ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: #ffffff;
+            color: #0f172a;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 6rem 0 4rem;
+            background: #ffffff;
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            color: #0f172a;
+            letter-spacing: -0.025em;
+        }
+
+        .hero-text .highlight {
+            color: #3b82f6;
+        }
+
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #475569;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            font-weight: 500;
+        }
+
+        .hero-features {
+            list-style: none;
+            margin-bottom: 2.5rem;
+        }
+
+        .hero-features li {
+            padding: 0.75rem 0;
+            color: #475569;
+            position: relative;
+            padding-left: 2rem;
+            font-size: 1.05rem;
+            font-weight: 500;
+        }
+
+        .hero-features li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #10b981;
+            font-weight: 700;
+            font-size: 1.1rem;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1.25rem;
+        }
+
+        .btn-primary {
+            background: #0f172a;
+            color: white;
+            padding: 1.125rem 2.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+            border: 2px solid #0f172a;
+        }
+
+        .btn-primary:hover {
+            background: transparent;
+            color: #0f172a;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #0f172a;
+            padding: 1.125rem 2.25rem;
+            border: 2px solid #e2e8f0;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.2s ease;
+        }
+
+        .btn-secondary:hover {
+            border-color: #0f172a;
+            background: #f8fafc;
+        }
+
+        /* Specialization Box */
+        .specialization-box {
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2.5rem;
+        }
+
+        .spec-title {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .spec-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .spec-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            transition: all 0.2s ease;
+        }
+
+        .spec-item:hover {
+            border-color: #3b82f6;
+            transform: translateY(-2px);
+        }
+
+        .spec-item h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin-bottom: 0.75rem;
+        }
+
+        .spec-item p {
+            color: #475569;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            margin-bottom: 1rem;
+        }
+
+        .spec-link {
+            color: #3b82f6;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .spec-link:hover {
+            text-decoration: underline;
+        }
+
+        /* Content Sections */
+        .content-section {
+            padding: 6rem 0;
+        }
+
+        .content-section:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-title {
+            font-size: 2.75rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            color: #0f172a;
+            letter-spacing: -0.025em;
+        }
+
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #475569;
+            line-height: 1.6;
+        }
+
+        .content-text {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #475569;
+        }
+
+        .content-text h3 {
+            font-size: 1.75rem;
+            font-weight: 800;
+            color: #0f172a;
+            margin: 3rem 0 1.5rem;
+        }
+
+        .content-text h4 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #1e40af;
+            margin: 2.5rem 0 1rem;
+        }
+
+        .content-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        .content-text ul {
+            margin: 1.5rem 0;
+            padding-left: 2rem;
+        }
+
+        .content-text li {
+            margin-bottom: 0.75rem;
+            color: #475569;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 2px solid #e2e8f0;
+            margin: 3rem 0;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th {
+            background: #0f172a;
+            color: white;
+            padding: 1.25rem;
+            font-weight: 700;
+            text-align: left;
+        }
+
+        .comparison-table td {
+            padding: 1.25rem;
+            border-bottom: 1px solid #e2e8f0;
+            vertical-align: top;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        /* Specialization Cards */
+        .specializations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .specialization-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .specialization-card:hover {
+            border-color: #3b82f6;
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .specialization-card h3 {
+            font-size: 1.375rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+
+        .specialization-card p {
+            color: #475569;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .card-cta {
+            background: #3b82f6;
+            color: white;
+            padding: 0.875rem 1.75rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            transition: all 0.2s ease;
+        }
+
+        .card-cta:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+
+        /* FAQ Grid */
+        .faq-grid {
+            display: grid;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .faq-item {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 2px solid #e2e8f0;
+            transition: all 0.2s ease;
+        }
+
+        .faq-item:hover {
+            border-color: #cbd5e1;
+        }
+
+        .faq-item h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0f172a;
+            line-height: 1.4;
+        }
+
+        .faq-item p {
+            color: #475569;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 6rem 0;
+            background: #0f172a;
+            text-align: center;
+        }
+
+        .cta-content h2 {
+            font-size: 2.75rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            color: white;
+            letter-spacing: -0.025em;
+        }
+
+        .cta-content p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+            margin-bottom: 2.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.6;
+        }
+
+        .cta-content .btn-primary {
+            background: white;
+            color: #0f172a;
+            border: 2px solid white;
+        }
+
+        .cta-content .btn-primary:hover {
+            background: transparent;
+            color: white;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2.25rem;
+            }
+
+            .specializations-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-cta {
+                flex-direction: column;
+            }
+
+            .container {
+                padding: 0 1.5rem;
+            }
+
+            .comparison-table {
+                font-size: 0.9rem;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Professional <span class="highlight">Content Writer</span></h1>
+                    <p class="hero-subtitle">Expert content writer specializing in executive content, LinkedIn writing, and thought leadership for startup founders, CEOs, and technology leaders. Choose your content writing specialization below.</p>
+                    
+                    <ul class="hero-features">
+                        <li>Executive content writing specialist (not general content)</li>
+                        <li>LinkedIn, ghostwriting, and thought leadership content</li>
+                        <li>Direct access to experienced content writer</li>
+                        <li>Proven results across cybersecurity, fintech, and biotech</li>
+                        <li>Strategic business focus vs generic content creation</li>
+                    </ul>
+
+                    <div class="hero-cta">
+                        <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free Content Strategy Call</a>
+                        <a href="#specializations" class="btn-secondary">Choose Your Specialization</a>
+                    </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Work with a Professional Content Writer?</h2>
+                <p>Stop struggling with content creation and start building authentic thought leadership that drives real business results. Get a proven content strategy tailored to your industry and business objectives.</p>
+                <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free Content Strategy Call</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>        </div>
+
+                <div class="specialization-box">
+                    <h3 class="spec-title">Content Writing Specializations</h3>
+                    <div class="spec-grid">
+                        <div class="spec-item">
+                            <h4>Executive Content Writer</h4>
+                            <p>Specialized content for C-suite executives, thought leadership, and business communication</p>
+                            <a href="executive-content-writer-guide.html" class="spec-link">Learn More →</a>
+                        </div>
+                        <div class="spec-item">
+                            <h4>LinkedIn Content Writer</h4>
+                            <p>Professional LinkedIn content writing for executives and founders</p>
+                            <a href="linkedin-content-writer.html" class="spec-link">Explore Services →</a>
+                        </div>
+                        <div class="spec-item">
+                            <h4>Professional Ghostwriter</h4>
+                            <p>Complete ghostwriting services for executives and business leaders</p>
+                            <a href="hire-ghostwriter.html" class="spec-link">Hire a Ghostwriter →</a>
+                        </div>
+                        <div class="spec-item">
+                            <h4>SaaS Content Writer</h4>
+                            <p>Specialized content writing for software founders and tech startups</p>
+                            <a href="saas-content-writer-linkedin-strategy.html" class="spec-link">SaaS Strategy →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is a Content Writer -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Does a Content Writer Do?</h2>
+                <p class="section-subtitle">Understanding the role of professional content writers and why specialization matters for business results</p>
+            </div>
+            
+            <div class="content-text">
+                <p>A content writer creates written content for businesses, including blog posts, articles, website copy, social media content, and marketing materials. However, not all content writers are created equal. The difference between general content writers and specialized executive content writers can determine whether your content drives real business results or simply fills space online.</p>
+
+                <h3>Types of Content Writers</h3>
+                <p>The content writing industry includes various specializations, each serving different business needs and audiences:</p>
+
+                <h4>General Content Writers</h4>
+                <p>General content writers create broad business content across multiple industries and content types. They typically focus on SEO-driven blog posts, website copy, and basic marketing materials. While cost-effective, general content writers often lack the deep industry knowledge required for executive-level communication.</p>
+
+                <h4>Executive Content Writers</h4>
+                <p>Executive content writers specialize in creating content for business leaders, focusing on thought leadership, strategic communication, and professional relationship building. They understand executive communication patterns and create content that resonates with other decision-makers, investors, and industry leaders.</p>
+
+                <h4>Platform-Specific Content Writers</h4>
+                <p>Some content writers specialize in specific platforms like LinkedIn, where professional networking and thought leadership require different skills than general social media or website content. <a href="linkedin-content-writer.html">LinkedIn content writers</a> understand professional audiences and business relationship building.</p>
+
+                <h3>Content Writer vs Copywriter vs Ghostwriter</h3>
+                <div class="comparison-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Primary Focus</th>
+                                <th>Content Types</th>
+                                <th>Target Audience</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>Content Writer</strong></td>
+                                <td>Informational and educational content</td>
+                                <td>Blog posts, articles, guides, social media</td>
+                                <td>General audience, customers, prospects</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Copywriter</strong></td>
+                                <td>Persuasive sales and marketing copy</td>
+                                <td>Sales pages, ads, email campaigns, product descriptions</td>
+                                <td>Potential customers ready to buy</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ghostwriter</strong></td>
+                                <td>Content published under client's name</td>
+                                <td>Executive content, thought leadership, books</td>
+                                <td>Industry peers, investors, stakeholders</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Executive Content Writer</strong></td>
+                                <td>Thought leadership and authority building</td>
+                                <td>Strategic insights, industry analysis, leadership content</td>
+                                <td>Other executives, industry leaders, media</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h4>Why Specialization Matters</h4>
+                <p>Specialized content writers bring industry knowledge, audience understanding, and strategic thinking that general writers cannot provide. For executives and founders, this specialization translates into content that builds authentic authority rather than generic business messaging.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Writing Specializations -->
+    <section class="content-section" id="specializations">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Choose Your Content Writing Specialization</h2>
+                <p class="section-subtitle">Different content writing needs require different expertise. Find the right specialization for your business objectives.</p>
+            </div>
+
+            <div class="specializations-grid">
+                <div class="specialization-card">
+                    <h3>Executive Content Writer</h3>
+                    <p>Specialized content writing for C-suite executives, focusing on thought leadership, strategic communication, and authority building among industry peers and stakeholders.</p>
+                    <a href="executive-content-writer-guide.html" class="card-cta">Learn About Executive Content →</a>
+                </div>
+
+                <div class="specialization-card">
+                    <h3>LinkedIn Content Writer</h3>
+                    <p>Professional LinkedIn content writing services for executives and founders who need strategic LinkedIn presence without the time investment of DIY content creation.</p>
+                    <a href="linkedin-content-writer.html" class="card-cta">Explore LinkedIn Services →</a>
+                </div>
+
+                <div class="specialization-card">
+                    <h3>Professional Ghostwriter</h3>
+                    <p>Complete ghostwriting services for executives who want high-quality content published under their name, including thought leadership and strategic communication.</p>
+                    <a href="hire-ghostwriter.html" class="card-cta">Hire a Ghostwriter →</a>
+                </div>
+
+                <div class="specialization-card">
+                    <h3>SaaS Content Writer</h3>
+                    <p>Specialized content writing for software founders and technology startups, focusing on technical credibility and enterprise customer communication.</p>
+                    <a href="saas-content-writer-linkedin-strategy.html" class="card-cta">SaaS Content Strategy →</a>
+                </div>
+
+                <div class="specialization-card">
+                    <h3>FinTech Content Writer</h3>
+                    <p>Content writing for financial technology companies, balancing innovation messaging with trust-building and regulatory compliance considerations.</p>
+                    <a href="fintech-founder-linkedin-content.html" class="card-cta">FinTech Content Guide →</a>
+                </div>
+
+                <div class="specialization-card">
+                    <h3>SEO Content Writer</h3>
+                    <p>Professional SEO content writing services that combine search optimization with executive-level content quality for sustainable organic growth.</p>
+                    <a href="seo-content-writer.html" class="card-cta">SEO Content Services →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Writer Pricing -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Content Writer Pricing: What to Expect</h2>
+                <p class="section-subtitle">Understanding content writer pricing across different specializations and service levels</p>
+            </div>
+            
+            <div class="content-text">
+                <h3>Content Writer Pricing by Specialization</h3>
+                <p>Content writer pricing varies significantly based on specialization, experience, and the strategic value provided:</p>
+
+                <h4>General Content Writers: $500-$3,000/month</h4>
+                <p>General content writers focus on volume-based content creation including blog posts, website copy, and basic social media content. While cost-effective, they often lack industry expertise and strategic thinking required for executive communication.</p>
+
+                <h4>Executive Content Writers: $2,500-$8,000/month</h4>
+                <p>Executive content writers bring specialized expertise in business leadership communication, thought leadership development, and strategic content that drives business relationships and opportunities.</p>
+
+                <h4>Platform Specialists: $2,500-$5,000/month</h4>
+                <p><a href="linkedin-content-writer.html">LinkedIn content writers</a> and other platform specialists focus on specific channels where expertise in audience behavior, algorithm optimization, and platform-specific best practices drive superior results.</p>
+
+                <h3>What Influences Content Writer Pricing</h3>
+                <p>Several factors determine content writer pricing and the value you receive:</p>
+
+                <h4>Industry Specialization</h4>
+                <p>Content writers with deep expertise in specific industries like technology, finance, or healthcare command higher rates due to their ability to create credible, technically accurate content that resonates with professional audiences.</p>
+
+                <h4>Strategic vs Tactical Focus</h4>
+                <p>Content writers who provide strategic thinking, voice development, and business impact measurement offer more value than those who simply execute content requests without strategic input.</p>
+
+                <h4>Voice Capture and Authenticity</h4>
+                <p>The best content writers invest significant time in understanding your communication style, business philosophy, and unique perspective. This voice capture process ensures content sounds authentically like you rather than generic business messaging.</p>
+
+                <h3>How to Evaluate Content Writer ROI</h3>
+                <p>Content writer pricing should be evaluated based on business impact rather than cost alone:</p>
+
+                <ul>
+                    <li><strong>Business Relationships:</strong> Quality content builds relationships with investors, customers, partners, and industry leaders</li>
+                    <li><strong>Thought Leadership:</strong> Strategic content establishes authority and credibility within your industry</li>
+                    <li><strong>Time Optimization:</strong> Professional content writing frees your time for core business activities</li>
+                    <li><strong>Competitive Positioning:</strong> Expert content differentiates you from competitors using generic messaging</li>
+                </ul>
+
+                <p>For detailed pricing information and ROI considerations, see our comprehensive <a href="linkedin-content-writer-pricing.html">content writer pricing guide</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Content Writer FAQ</h2>
+                <p class="section-subtitle">Common questions about hiring professional content writers and choosing the right specialization</p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What does a content writer do?</h3>
+                    <p>A content writer creates written content for businesses including blog posts, articles, social media content, website copy, and marketing materials. Executive content writers specialize in thought leadership and professional content for business leaders.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How much does a professional content writer cost?</h3>
+                    <p>Content writer pricing varies by specialization and scope. General content writers charge $500-$3,000 monthly, while executive content writers typically charge $2,500-$8,000 monthly for specialized business leadership content.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What's the difference between a content writer and copywriter?</h3>
+                    <p>Content writers focus on informational and educational content like blog posts and articles, while copywriters create persuasive sales and marketing copy. Executive content writers specialize in thought leadership and professional relationship building.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Should I hire a general content writer or specialist?</h3>
+                    <p>For executive and business leadership content, specialists provide significantly more value through industry expertise, strategic thinking, and understanding of professional audiences. General content writers work well for basic informational content.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What's the difference between a content writer and ghostwriter?</h3>
+                    <p>Content writers create content that's usually attributed to the company or brand, while ghostwriters create content published under the client's name. <a href="hire-ghostwriter.html">Professional ghostwriters</a> specialize in executive thought leadership and personal branding.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How do I choose the right content writer specialization?</h3>
+                    <p>Consider your business objectives: LinkedIn content writers for professional networking, executive content writers for thought leadership, ghostwriters for personal branding, and industry specialists for technical credibility.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can content writers help with LinkedIn specifically?</h3>
+                    <p>Yes, <a href="linkedin-content-writer.html">LinkedIn content writers</a> specialize in professional networking content, understanding LinkedIn's algorithm, executive communication patterns, and business relationship building through strategic content.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What results can I expect from professional content writing?</h3>
+                    <p>Professional content writers help build thought leadership, generate business relationships, improve industry recognition, and create opportunities for partnerships, speaking engagements, and business development.</p>
+                </div>
+            </div>
+        
