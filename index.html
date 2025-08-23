@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -453,7 +453,7 @@
             outline-offset: 2px;
         }
 
-        /* Mobile optimizations */
+        /* Mobile optimizations - FIXED MOBILE HEADER PADDING */
         @media (max-width: 768px) {
             .hero-content {
                 grid-template-columns: 1fr;
@@ -475,6 +475,11 @@
 
             .container {
                 padding: 0 1.5rem;
+            }
+
+            /* CRITICAL FIX - Increased mobile top padding */
+            .hero {
+                padding: 12rem 0 4rem; /* Changed from 8rem to 12rem */
             }
         }
     </style>
@@ -887,6 +892,11 @@
                 }
 
                 /* FAQ Section */
+                .faq-section {
+                    padding: 8rem 0;
+                    background: #f8fafc;
+                }
+
                 .faq-grid {
                     max-width: 1000px;
                     margin: 0 auto;
@@ -1100,6 +1110,10 @@
 
                     .nav-dropdown:hover .dropdown-content {
                         display: block;
+                    }
+
+                    .nav-cta {
+                        display: none;
                     }
                 }
             `;
@@ -1439,16 +1453,6 @@
                     <p><a href="remote-content-writer.html">Remote Content Writer</a></p>
                     <p><a href="finance-content-writer.html">Finance Content Writer</a></p>
                     <p><a href="real-estate-content-writer.html">Real Estate Content Writer</a></p>
-
-
-                 
- 
-
-                   
-                    
-
-                    
-
                 </div>
                 
                 <div class="footer-section">
