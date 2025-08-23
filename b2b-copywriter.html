@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B2B Copywriter | Professional B2B Copy and Content Writing Services</title>
-    <meta name="description" content="Professional B2B copywriter specializing in executive content, LinkedIn copy, and strategic business communications for SaaS, fintech, and technology companies. Intelligence background, proven results.">
-    <meta name="keywords" content="b2b copywriter, b2b copywriting services, business copywriter, b2b content writer, saas copywriter, fintech copywriter, technology copywriter">
+    <meta name="description" content="Professional B2B copywriter and B2B content writer specializing in executive content, LinkedIn copy, and strategic business communications. Expert business copywriter for SaaS, fintech, and technology companies.">
+    <meta name="keywords" content="b2b copywriter, b2b copywriters, business copywriter, b2b content writer, saas copywriter, fintech copywriter, technology copywriter">
     <link rel="canonical" href="https://executivecontentwriter.com/b2b-copywriter.html">
     
     <!-- Schema Markup -->
@@ -14,14 +14,15 @@
       "@context": "https://schema.org",
       "@type": "Service",
       "name": "B2B Copywriter Services",
-      "description": "Professional B2B copywriting services for technology companies, SaaS platforms, and executive leaders. Specialized in LinkedIn content, executive communications, and strategic business copy.",
+      "description": "Professional B2B copywriting and content writing services for technology companies, SaaS platforms, and executive leaders. Specialized in LinkedIn content, executive communications, and strategic business copy.",
       "provider": {
         "@type": "Person",
         "name": "Lewis Patrick",
-        "hasCredential": "Intelligence & Cybersecurity Background"
+        "hasCredential": "10 Years Corporate Consulting & Sales Experience"
       },
       "serviceType": "B2B Copywriting",
-      "priceRange": "$2500-$5000"
+      "priceRange": "$2500-$5000",
+      "dateModified": "2025-08-23"
     }
     </script>
     
@@ -44,6 +45,15 @@
             max-width: 900px;
             margin: 0 auto;
             padding: 0 2rem;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.9rem;
+            padding: 1rem 0;
+            background: #f8fafc;
+            border-bottom: 1px solid #e2e8f0;
         }
 
         /* Header */
@@ -87,6 +97,7 @@
             font-size: 1.1rem;
             transition: all 0.2s ease;
             border: 2px solid #0f172a;
+            display: inline-block;
         }
 
         .btn-primary:hover {
@@ -94,24 +105,63 @@
             color: #0f172a;
         }
 
-        /* What Section */
-        .what-section {
+        /* Content Sections */
+        .content-section {
             padding: 4rem 0;
             background: white;
         }
 
-        .what-section h2 {
+        .content-section:nth-child(even) {
+            background: #f8fafc;
+        }
+
+        .content-section h2 {
             font-size: 2.25rem;
             font-weight: 800;
             margin-bottom: 1.5rem;
             color: #0f172a;
         }
 
-        .what-section p {
+        .content-section h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+
+        .content-section p {
             color: #475569;
             margin-bottom: 1.5rem;
             font-size: 1.125rem;
             line-height: 1.7;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .faq-item {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .faq-item h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+
+        .faq-item p {
+            color: #475569;
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0;
         }
 
         /* Services Types */
@@ -165,6 +215,103 @@
             color: #475569;
             font-size: 1rem;
             line-height: 1.6;
+        }
+
+        /* Comparison Section */
+        .comparison-section {
+            padding: 4rem 0;
+            background: white;
+        }
+
+        .comparison-table {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 2rem 0;
+        }
+
+        .comparison-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .comparison-row:last-child {
+            border-bottom: none;
+        }
+
+        .comparison-cell {
+            padding: 1.5rem;
+            border-right: 1px solid #e2e8f0;
+        }
+
+        .comparison-cell:last-child {
+            border-right: none;
+        }
+
+        .comparison-header {
+            background: #7c3aed;
+            color: white;
+            font-weight: 700;
+        }
+
+        .comparison-cell.highlight {
+            background: #ede9fe;
+        }
+
+        /* Examples Section */
+        .examples-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .example-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 2rem;
+        }
+
+        .example-card h4 {
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #0f172a;
+        }
+
+        .example-before {
+            background: #fef2f2;
+            border: 1px solid #fecaca;
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .example-after {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 6px;
+            padding: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .example-label {
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .example-label.before {
+            color: #dc2626;
+        }
+
+        .example-label.after {
+            color: #16a34a;
         }
 
         /* Industries */
@@ -433,8 +580,18 @@
             .types-grid,
             .industries-grid,
             .pricing-grid,
-            .why-grid {
+            .why-grid,
+            .examples-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .comparison-row {
+                grid-template-columns: 1fr;
+            }
+
+            .comparison-cell {
+                border-right: none;
+                border-bottom: 1px solid #e2e8f0;
             }
 
             .container {
@@ -445,11 +602,15 @@
 </head>
 
 <body>
+    <div class="last-updated">
+        Last Updated: August 23, 2025
+    </div>
+
     <!-- Header -->
     <section class="header">
         <div class="container">
             <h1>B2B <span class="highlight">Copywriter</span></h1>
-            <p>Professional B2B copywriter specializing in executive content, LinkedIn copy, and strategic business communications for SaaS, fintech, and technology companies. Intelligence background with proven results.</p>
+            <p>Professional B2B copywriter and B2B content writer specializing in executive content, LinkedIn copy, and strategic business communications. Expert business copywriter with 10 years corporate consulting experience and proven results for SaaS, fintech, and technology companies.</p>
             <div class="header-cta">
                 <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free B2B Copy Strategy Call</a>
             </div>
@@ -457,117 +618,200 @@
     </section>
 
     <!-- What is B2B Copywriter -->
-    <section class="what-section">
+    <section class="content-section">
         <div class="container">
-            <h2>What is a B2B Copywriter?</h2>
-            <p>A B2B copywriter is a specialized professional who creates strategic copy and content specifically for business-to-business companies, focusing on complex sales cycles, multiple decision makers, and technical products or services. Unlike B2C copywriters, B2B copywriters understand enterprise buyer behavior, industry terminology, and the nuanced messaging required to influence business purchase decisions.</p>
+            <h2>What Does a B2B Copywriter Do?</h2>
+            <p>A B2B copywriter creates strategic copy and content specifically for business-to-business companies, focusing on complex sales cycles, multiple decision makers, and technical products or services. Unlike B2C copywriters, professional B2B copywriters understand enterprise buyer behavior, industry terminology, and the nuanced messaging required to influence business purchase decisions.</p>
             
-            <p>As your dedicated B2B copywriter, I work with SaaS companies, fintech firms, cybersecurity startups, and technology businesses to create LinkedIn content, executive communications, and strategic copy that resonates with enterprise buyers and supports complex sales processes. With an intelligence and cybersecurity background, I bring unique credibility to technology sectors while understanding the strategic communication needs of B2B companies.</p>
+            <p>As your dedicated business copywriter, I combine 10 years of corporate consulting and sales experience with world-class copywriting principles from legends like Eugene Schwartz and David Ogilvy. This means applying proven frameworks like the "slippery slope" and the "4 U's" in a way that speaks to sophisticated business audiences—without sounding like a marketing course pitch.</p>
             
-            <p>Professional B2B copywriting encompasses LinkedIn thought leadership, executive content, sales copy, and strategic messaging that addresses the specific challenges and opportunities of business-to-business marketing and communication.</p>
+            <p>The result? Copy that doesn't just sound professional—it drives actual business outcomes. Because I don't sell words, I sell results.</p>
+        </div>
+    </section>
+
+    <!-- B2B vs Regular Copywriter -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2>B2B Copywriter vs Regular Copywriter: What's the Difference?</h2>
+            <p>Understanding the distinction between B2B copywriters and general copywriters is crucial for making the right hiring decision for your business.</p>
+            
+            <div class="comparison-table">
+                <div class="comparison-row comparison-header">
+                    <div class="comparison-cell">Aspect</div>
+                    <div class="comparison-cell">Regular Copywriter</div>
+                    <div class="comparison-cell">B2B Copywriter</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell"><strong>Target Audience</strong></div>
+                    <div class="comparison-cell">Individual consumers, emotional decisions</div>
+                    <div class="comparison-cell highlight">Business professionals, logical decisions</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell"><strong>Sales Cycle</strong></div>
+                    <div class="comparison-cell">Short, impulse-driven purchases</div>
+                    <div class="comparison-cell highlight">Long, complex evaluation processes</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell"><strong>Decision Makers</strong></div>
+                    <div class="comparison-cell">Single individual</div>
+                    <div class="comparison-cell highlight">Multiple stakeholders, committees</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell"><strong>Content Approach</strong></div>
+                    <div class="comparison-cell">Emotional triggers, lifestyle benefits</div>
+                    <div class="comparison-cell highlight">ROI focus, business outcomes, data-driven</div>
+                </div>
+                
+                <div class="comparison-row">
+                    <div class="comparison-cell"><strong>Industry Knowledge</strong></div>
+                    <div class="comparison-cell">General market understanding</div>
+                    <div class="comparison-cell highlight">Deep sector expertise, technical credibility</div>
+                </div>
+            </div>
+            
+            <p>A specialized B2B copywriter understands that enterprise buyers need different messaging, longer nurture sequences, and content that addresses multiple stakeholder concerns throughout the decision-making process.</p>
+        </div>
+    </section>
+
+    <!-- How to Choose Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2>How to Choose the Best B2B Copywriter</h2>
+            <p>Selecting the right business copywriter for your company requires evaluating several key factors that directly impact your ROI and brand positioning.</p>
+            
+            <h3>Essential Qualities to Look For:</h3>
+            <p><strong>Industry Experience:</strong> The best B2B copywriters have worked within your sector or similar industries. They understand your buyers, competitors, and market dynamics without requiring extensive education.</p>
+            
+            <p><strong>Corporate Background:</strong> Look for copywriters with actual business experience—not just writing experience. Corporate consulting, sales, or executive roles provide the credibility and understanding needed to speak authentically to business audiences.</p>
+            
+            <p><strong>Results Over Portfolio:</strong> While samples matter, focus on copywriters who can demonstrate measurable business outcomes: lead generation, sales conversion improvements, executive brand building, or thought leadership development.</p>
+            
+            <p><strong>Strategic Thinking:</strong> The best B2B copywriters don't just execute—they contribute strategic insights about messaging, positioning, and go-to-market approaches based on their business experience.</p>
+            
+            <h3>Red Flags to Avoid:</h3>
+            <p>• Generic templates and one-size-fits-all approaches<br>
+            • Lack of industry knowledge or business experience<br>
+            • Over-promising unrealistic results or timelines<br>
+            • Inability to discuss your business model intelligently<br>
+            • Focus on creative awards rather than business outcomes</p>
+        </div>
+    </section>
+
+    <!-- B2B Copywriting Examples -->
+    <section class="content-section">
+        <div class="container">
+            <h2>B2B Copywriting Examples: Before & After</h2>
+            <p>See how strategic B2B copywriting transforms generic business messaging into compelling, results-driven content that resonates with enterprise buyers.</p>
+            
+            <div class="examples-grid">
+                <div class="example-card">
+                    <h4>LinkedIn Executive Post</h4>
+                    <div class="example-before">
+                        <div class="example-label before">BEFORE</div>
+                        "Our cybersecurity platform is the best solution for protecting your business from threats. Contact us today!"
+                    </div>
+                    <div class="example-after">
+                        <div class="example-label after">AFTER</div>
+                        "Just reviewed our Q3 incident response data: companies with proactive threat hunting detected breaches 200 days faster than reactive approaches. The cost difference? $1.2M vs $4.3M average impact. Here's what changed our clients' security posture..."
+                    </div>
+                </div>
+                
+                <div class="example-card">
+                    <h4>SaaS Product Description</h4>
+                    <div class="example-before">
+                        <div class="example-label before">BEFORE</div>
+                        "Our software has many great features that will help your team be more productive and efficient."
+                    </div>
+                    <div class="example-after">
+                        <div class="example-label after">AFTER</div>
+                        "Reduce manual data entry by 73% and eliminate approval bottlenecks that currently add 5-8 days to your deal closure process. IT teams report 40% fewer help desk tickets within 90 days of implementation."
+                    </div>
+                </div>
+                
+                <div class="example-card">
+                    <h4>FinTech Sales Email</h4>
+                    <div class="example-before">
+                        <div class="example-label before">BEFORE</div>
+                        "Hi [Name], I wanted to reach out about our payment processing solution. We have competitive rates and great customer service."
+                    </div>
+                    <div class="example-after">
+                        <div class="example-label after">AFTER</div>
+                        "Hi [Name], noticed [Company] just raised Series B funding. Based on similar growth-stage fintech companies we serve, payment processing costs typically spike 40-60% during rapid scaling. Here's how three companies maintained sub-2% processing costs through their growth phase..."
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- B2B Copywriting Services -->
     <section class="services-types">
         <div class="container">
-            <h2>B2B Copywriting Services</h2>
+            <h2>B2B Copywriting & Content Writing Services</h2>
             <p class="subtitle">Comprehensive copywriting solutions designed for B2B companies and executive leaders</p>
 
             <div class="types-grid">
                 <div class="type-card">
                     <h3>Executive LinkedIn Content</h3>
-                    <p>Strategic LinkedIn posts, articles, and thought leadership content that positions executives as industry authorities and drives B2B business development.</p>
+                    <p>Strategic LinkedIn posts, articles, and thought leadership content that positions executives as industry authorities and drives B2B business development through professional networks.</p>
                 </div>
 
                 <div class="type-card">
                     <h3>B2B Sales Copy</h3>
-                    <p>Website copy, sales pages, email sequences, and marketing materials that address complex B2B buyer journeys and enterprise decision-making processes.</p>
+                    <p>Website copy, sales pages, email sequences, and marketing materials that address complex B2B buyer journeys and enterprise decision-making processes with compelling messaging.</p>
                 </div>
 
                 <div class="type-card">
-                    <h3>Content Marketing</h3>
-                    <p>Educational content, whitepapers, case studies, and thought leadership pieces that support B2B lead generation and nurture complex sales cycles.</p>
+                    <h3>Business Content Marketing</h3>
+                    <p>Educational content, whitepapers, case studies, and thought leadership pieces that support B2B lead generation and nurture complex sales cycles for business audiences.</p>
                 </div>
 
                 <div class="type-card">
                     <h3>Executive Communications</h3>
-                    <p>Professional communications for executives including newsletters, stakeholder updates, and strategic messaging that builds trust and authority.</p>
+                    <p>Professional communications for executives including newsletters, stakeholder updates, and strategic messaging that builds trust and authority in business markets.</p>
                 </div>
 
                 <div class="type-card">
-                    <h3>Product Positioning</h3>
-                    <p>Technical product descriptions, feature explanations, and value proposition copy that translates complex B2B solutions into compelling business benefits.</p>
+                    <h3>Product Positioning Copy</h3>
+                    <p>Technical product descriptions, feature explanations, and value proposition copy that translates complex B2B solutions into compelling business benefits for enterprise buyers.</p>
                 </div>
 
                 <div class="type-card">
-                    <h3>Email Marketing</h3>
-                    <p>B2B email campaigns, nurture sequences, and executive newsletters that maintain engagement throughout extended enterprise sales cycles.</p>
+                    <h3>B2B Email Marketing</h3>
+                    <p>Business-focused email campaigns, nurture sequences, and executive newsletters that maintain engagement throughout extended enterprise sales cycles and decision processes.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Industries -->
-    <section class="industries-section">
-        <div class="container">
-            <h2>B2B Industries We Serve</h2>
-
-            <div class="industries-grid">
-                <div class="industry-card">
-                    <div class="industry-icon">🛡️</div>
-                    <h3>Cybersecurity</h3>
-                    <p>Security solutions, threat intelligence, compliance software, and enterprise security platforms targeting IT decision makers.</p>
-                </div>
-
-                <div class="industry-card">
-                    <div class="industry-icon">💰</div>
-                    <h3>FinTech</h3>
-                    <p>Financial technology, payment processing, banking solutions, and investment platforms serving enterprise financial institutions.</p>
-                </div>
-
-                <div class="industry-card">
-                    <div class="industry-icon">🚀</div>
-                    <h3>SaaS</h3>
-                    <p>Software-as-a-service platforms, enterprise applications, and cloud-based solutions targeting business users and IT departments.</p>
-                </div>
-
-                <div class="industry-card">
-                    <div class="industry-icon">🏥</div>
-                    <h3>HealthTech</h3>
-                    <p>Healthcare technology, medical devices, digital health platforms, and life sciences companies serving healthcare professionals.</p>
-                </div>
-
-                <div class="industry-card">
-                    <div class="industry-icon">⚡</div>
-                    <h3>Enterprise Tech</h3>
-                    <p>Enterprise software, infrastructure solutions, data platforms, and technology services targeting large organizations.</p>
-                </div>
-
-                <div class="industry-card">
-                    <div class="industry-icon">📊</div>
-                    <h3>Professional Services</h3>
-                    <p>Consulting firms, legal services, accounting practices, and advisory companies serving business clients and executives.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing -->
+    <!-- B2B Copywriting Rates & Costs -->
     <section class="pricing-section">
         <div class="container">
-            <h2>B2B Copywriter Pricing</h2>
-            <p class="subtitle">Professional B2B copywriting packages designed for growing companies</p>
+            <h2>B2B Copywriter Rates & Costs (2025)</h2>
+            <p class="subtitle">Transparent pricing for professional B2B copywriting services</p>
+            
+            <div class="content-section" style="background: white; padding: 2rem 0;">
+                <h3>Industry Rate Ranges:</h3>
+                <p><strong>Freelance B2B Copywriters:</strong> $75-$200/hour or $1,500-$8,000/month retainers<br>
+                <strong>Specialized Business Copywriters:</strong> $2,500-$5,000/month for comprehensive services<br>
+                <strong>Agency B2B Copy Services:</strong> $5,000-$15,000/month (includes management overhead)<br>
+                <strong>Enterprise Copywriting Consultants:</strong> $200-$500/hour for strategic projects</p>
+                
+                <p>Factors affecting B2B copywriter costs include industry complexity, project scope, copywriter experience, and whether you need ongoing content or one-time projects.</p>
+            </div>
 
             <div class="pricing-grid">
                 <div class="pricing-card">
                     <h3>Essential</h3>
                     <div class="pricing-price">$2,500<span style="font-size: 1rem; color: #64748b;">/month</span></div>
-                    <p>Perfect for B2B companies that need consistent, professional copy to support sales and marketing efforts.</p>
+                    <p>Perfect for B2B companies that need consistent, professional copy to support sales and marketing efforts with strategic content.</p>
                     
                     <ul class="pricing-features">
                         <li>B2B content creation (3-5 pieces weekly)</li>
-                        <li>LinkedIn executive content</li>
+                        <li>LinkedIn executive content writing</li>
                         <li>90-minute strategy and voice capture session</li>
                         <li>Bi-weekly review calls</li>
                         <li>Direct copywriter access</li>
@@ -580,13 +824,13 @@
                 <div class="pricing-card featured">
                     <h3>Professional</h3>
                     <div class="pricing-price">$3,500<span style="font-size: 1rem; color: #64748b;">/month</span></div>
-                    <p>Comprehensive B2B copywriting strategy including sales copy, content marketing, and executive communications.</p>
+                    <p>Comprehensive B2B copywriting strategy including sales copy, content marketing, and executive communications for business growth.</p>
                     
                     <ul class="pricing-features">
                         <li>Everything in Essential package</li>
                         <li>B2B sales copy and email sequences</li>
                         <li>Executive newsletter development</li>
-                        <li>Content marketing strategy</li>
+                        <li>Business content marketing strategy</li>
                         <li>Monthly performance reviews</li>
                         <li>Cross-platform content optimization</li>
                     </ul>
@@ -597,7 +841,7 @@
                 <div class="pricing-card">
                     <h3>Enterprise</h3>
                     <div class="pricing-price">$5,000<span style="font-size: 1rem; color: #64748b;">/month</span></div>
-                    <p>Complete B2B copywriting solution with unlimited requests for comprehensive marketing and communications needs.</p>
+                    <p>Complete B2B copywriting solution with unlimited requests for comprehensive marketing and communications needs across your business.</p>
                     
                     <ul class="pricing-features">
                         <li>Everything in Professional package</li>
@@ -614,40 +858,122 @@
         </div>
     </section>
 
+    <!-- Industries -->
+    <section class="industries-section">
+        <div class="container">
+            <h2>B2B Industries We Serve</h2>
+
+            <div class="industries-grid">
+                <div class="industry-card">
+                    <div class="industry-icon">🛡️</div>
+                    <h3>Cybersecurity</h3>
+                    <p>Security solutions, threat intelligence, compliance software, and enterprise security platforms targeting IT decision makers and security professionals.</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">💰</div>
+                    <h3>FinTech</h3>
+                    <p>Financial technology, payment processing, banking solutions, and investment platforms serving enterprise financial institutions and business clients.</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">🚀</div>
+                    <h3>SaaS</h3>
+                    <p>Software-as-a-service platforms, enterprise applications, and cloud-based business solutions targeting corporate users and IT departments.</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">🏥</div>
+                    <h3>HealthTech</h3>
+                    <p>Healthcare technology, medical devices, digital health platforms, and life sciences companies serving healthcare professionals and medical institutions.</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">⚡</div>
+                    <h3>Enterprise Tech</h3>
+                    <p>Enterprise software, infrastructure solutions, data platforms, and technology services targeting large organizations and corporate decision makers.</p>
+                </div>
+
+                <div class="industry-card">
+                    <div class="industry-icon">📊</div>
+                    <h3>Professional Services</h3>
+                    <p>Consulting firms, legal services, accounting practices, and advisory companies serving business clients, executives, and corporate stakeholders.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2>Frequently Asked Questions About B2B Copywriting</h2>
+            
+            <div class="faq-item">
+                <h3>What's the difference between hiring a freelance B2B copywriter vs an agency?</h3>
+                <p>Freelance B2B copywriters offer direct access, specialized expertise, and typically lower costs ($2,500-$5,000/month vs $8,000-$15,000 for agencies). You work directly with the person writing your content, ensuring consistency and deep understanding of your business. Agencies provide broader services but often use junior writers while charging premium rates.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>How long does it take to see results from B2B copywriting?</h3>
+                <p>LinkedIn content and executive communications typically show engagement improvements within 2-4 weeks. Sales copy and email sequences may take 30-60 days to optimize based on performance data. Long-term thought leadership and brand building develop over 3-6 months of consistent, strategic content creation.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you write copy for technical B2B companies?</h3>
+                <p>Yes, with 10 years of corporate consulting experience and a cybersecurity background, I specialize in technical B2B companies. This includes SaaS platforms, cybersecurity solutions, fintech applications, and enterprise software where technical credibility is essential for effective messaging.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>What makes B2B copywriting different from regular business writing?</h3>
+                <p>B2B copywriting combines strategic messaging with proven conversion principles. Unlike general business writing, it's designed to influence purchase decisions, build executive authority, and support complex sales processes. It requires understanding both copywriting psychology and enterprise buyer behavior.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Can you help with LinkedIn content for executives?</h3>
+                <p>Executive LinkedIn content is one of my core specialties. I work with startup founders and corporate executives to create authentic thought leadership content that builds industry authority, attracts business opportunities, and supports personal brand development. This includes posts, articles, and strategic commenting.</p>
+            </div>
+            
+            <div class="faq-item">
+                <h3>Do you work with international B2B companies?</h3>
+                <p>Yes, I work with B2B companies globally, with particular experience serving clients in the UK, Netherlands, United States, and Canada. Understanding international business contexts and communication styles is part of effective B2B copywriting for global companies.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Why Choose -->
     <section class="why-section">
         <div class="container">
-            <h2>Why Choose a Specialized B2B Copywriter?</h2>
+            <h2>Why Choose a Specialized Business Copywriter?</h2>
 
             <div class="why-grid">
                 <div class="why-item">
-                    <h3>Technical Expertise</h3>
-                    <p>Intelligence and cybersecurity background provides credibility and understanding of complex technical products and services.</p>
+                    <h3>Corporate Consulting Experience</h3>
+                    <p>10 years of corporate consulting and sales experience provides authentic understanding of enterprise decision-making, stakeholder dynamics, and business challenges your buyers face daily.</p>
                 </div>
 
                 <div class="why-item">
-                    <h3>B2B Sales Understanding</h3>
-                    <p>Deep knowledge of enterprise sales cycles, multiple stakeholder decisions, and the unique challenges of B2B marketing.</p>
-                </div>
-
-                <div class="why-item">
-                    <h3>Executive Positioning</h3>
-                    <p>Specialized experience positioning executives and founders as thought leaders within their industries and target markets.</p>
-                </div>
-
-                <div class="why-item">
-                    <h3>Industry Credibility</h3>
-                    <p>Technology sector expertise ensures copy demonstrates genuine understanding of complex business environments and challenges.</p>
+                    <h3>Proven Copywriting Frameworks</h3>
+                    <p>Combines world-class copywriting principles from Schwartz and Ogilvy with sophisticated business communication—delivering persuasive copy that maintains executive credibility.</p>
                 </div>
 
                 <div class="why-item">
                     <h3>Results-Driven Approach</h3>
-                    <p>Focus on business outcomes including lead generation, sales support, and executive brand building that drives revenue growth.</p>
+                    <p>Focus on measurable business outcomes rather than creative awards. Every piece of copy is designed to drive specific results: lead generation, executive positioning, or sales support.</p>
+                </div>
+
+                <div class="why-item">
+                    <h3>Technical Industry Credibility</h3>
+                    <p>Intelligence and cybersecurity background ensures copy demonstrates genuine understanding of complex technical environments, compliance requirements, and enterprise security concerns.</p>
                 </div>
 
                 <div class="why-item">
                     <h3>Direct Partnership</h3>
-                    <p>Work directly with your copywriter - no account managers, agencies, or outsourcing of sensitive business content.</p>
+                    <p>Work directly with your business copywriter—no account managers, agencies, or outsourcing. Every strategy session, every piece of content, and every revision comes from direct collaboration.</p>
+                </div>
+
+                <div class="why-item">
+                    <h3>Strategic Business Insight</h3>
+                    <p>Beyond writing, contribute strategic insights about positioning, messaging, and go-to-market approaches based on real corporate experience and deep understanding of B2B markets.</p>
                 </div>
             </div>
         </div>
@@ -657,7 +983,7 @@
     <section class="cta-section">
         <div class="container">
             <h2>Ready to Elevate Your B2B Copy?</h2>
-            <p>Get a free strategy session to discuss your B2B copywriting needs and explore how professional copy can accelerate your sales and marketing results.</p>
+            <p>Get a free strategy session to discuss your B2B copywriting and content writing needs. Discover how strategic copy can accelerate your sales process and establish executive authority.</p>
             <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free Strategy Call</a>
         </div>
     </section>
