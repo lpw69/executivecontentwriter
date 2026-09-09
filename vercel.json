@@ -1,0 +1,13 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    { "source": "/", "destination": "https://underdog-ghostwriting.com/executive-ghostwriter", "permanent": true },
+    { "source": "/hire-ghostwriter.html", "destination": "https://underdog-ghostwriting.com/executive-ghostwriting-services", "permanent": true },
+    { "source": "/hire-ghostwriter", "destination": "https://underdog-ghostwriting.com/executive-ghostwriting-services", "permanent": true },
+    { "source": "/linkedin-strategy-startup-ceos.html", "destination": "https://underdog-ghostwriting.com/ceo-ghostwriter", "permanent": true },
+    { "source": "/linkedin-strategy-startup-ceos", "destination": "https://underdog-ghostwriting.com/ceo-ghostwriter", "permanent": true },
+    { "source": "/executive-communications.html", "destination": "https://underdog-ghostwriting.com/executive-ghostwriter", "permanent": true },
+    { "source": "/executive-communications", "destination": "https://underdog-ghostwriting.com/executive-ghostwriter", "permanent": true },
+    { "source": "/:path*", "destination": "https://underdog-ghostwriting.com/", "permanent": true }
+  ]
+}
