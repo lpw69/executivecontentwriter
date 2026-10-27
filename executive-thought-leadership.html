@@ -1,749 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive Thought Leadership | Professional Thought Leadership Services for Business Leaders</title>
-    <meta name="description" content="Professional executive thought leadership services for CEOs, founders, and C-suite executives. Strategic content creation and positioning that builds industry authority and drives business results.">
-    <meta name="keywords" content="executive thought leadership, thought leadership services, ceo thought leadership, executive positioning, thought leadership content, business thought leadership">
-    <link rel="canonical" href="https://executivecontentwriter.com/executive-thought-leadership.html">
-    
-    <!-- Schema Markup -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Executive Thought Leadership Services",
-      "description": "Professional executive thought leadership development for CEOs, founders, and C-suite executives. Strategic content creation and positioning services that build industry authority.",
-      "provider": {
-        "@type": "Person",
-        "name": "Lewis Patrick",
-        "hasCredential": "Intelligence & Cybersecurity Background"
-      },
-      "serviceType": "Executive Thought Leadership",
-      "priceRange": "$2500-$5000"
-    }
-    </script>
-    
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            background: #ffffff;
-            color: #0f172a;
-            line-height: 1.6;
-            font-weight: 400;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Header */
-        .header {
-            padding: 4rem 0 2rem;
-            text-align: center;
-            background: linear-gradient(135deg, #f8fafc 0%, #ecfdf5 100%);
-        }
-
-        .header h1 {
-            font-size: 3.5rem;
-            font-weight: 900;
-            margin-bottom: 1rem;
-            color: #0f172a;
-            letter-spacing: -0.025em;
-        }
-
-        .header .highlight {
-            color: #059669;
-        }
-
-        .header p {
-            font-size: 1.3rem;
-            color: #475569;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            line-height: 1.6;
-        }
-
-        .header-cta {
-            margin-top: 2rem;
-        }
-
-        .btn-primary {
-            background: #0f172a;
-            color: white;
-            padding: 1.125rem 2.25rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.2s ease;
-            border: 2px solid #0f172a;
-        }
-
-        .btn-primary:hover {
-            background: transparent;
-            color: #0f172a;
-        }
-
-        /* What Section */
-        .what-section {
-            padding: 4rem 0;
-            background: white;
-        }
-
-        .what-section h2 {
-            font-size: 2.25rem;
-            font-weight: 800;
-            margin-bottom: 1.5rem;
-            color: #0f172a;
-        }
-
-        .what-section p {
-            color: #475569;
-            margin-bottom: 1.5rem;
-            font-size: 1.125rem;
-            line-height: 1.7;
-        }
-
-        /* Why Important */
-        .importance-section {
-            padding: 4rem 0;
-            background: #f8fafc;
-        }
-
-        .importance-section h2 {
-            font-size: 2.25rem;
-            font-weight: 800;
-            margin-bottom: 2rem;
-            color: #0f172a;
-            text-align: center;
-        }
-
-        .importance-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .importance-card {
-            background: white;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 2rem;
-            text-align: center;
-            transition: all 0.2s ease;
-        }
-
-        .importance-card:hover {
-            border-color: #059669;
-            transform: translateY(-4px);
-        }
-
-        .importance-icon {
-            width: 60px;
-            height: 60px;
-            background: #ecfdf5;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 1rem;
-            font-size: 1.5rem;
-        }
-
-        .importance-card h3 {
-            font-size: 1.25rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            color: #0f172a;
-        }
-
-        .importance-card p {
-            color: #475569;
-            font-size: 0.95rem;
-        }
-
-        /* How We Build */
-        .process-section {
-            padding: 4rem 0;
-            background: white;
-        }
-
-        .process-section h2 {
-            font-size: 2.25rem;
-            font-weight: 800;
-            margin-bottom: 3rem;
-            color: #0f172a;
-            text-align: center;
-        }
-
-        .process-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-        }
-
-        .process-step {
-            text-align: center;
-            padding: 1.5rem;
-        }
-
-        .step-number {
-            width: 60px;
-            height: 60px;
-            background: #059669;
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.5rem;
-            font-weight: 900;
-            margin: 0 auto 1rem;
-        }
-
-        .process-step h3 {
-            font-size: 1.25rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            color: #0f172a;
-        }
-
-        .process-step p {
-            color: #475569;
-            font-size: 0.95rem;
-        }
-
-        /* Content Types */
-        .content-types {
-            padding: 4rem 0;
-            background: #f8fafc;
-        }
-
-        .content-types h2 {
-            font-size: 2.25rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            color: #0f172a;
-            text-align: center;
-        }
-
-        .content-types .subtitle {
-            text-align: center;
-            color: #475569;
-            margin-bottom: 3rem;
-            font-size: 1.1rem;
-        }
-
-        .types-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .type-card {
-            background: white;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 2rem;
-            transition: all 0.2s ease;
-        }
-
-        .type-card:hover {
-            border-color: #059669;
-            transform: translateY(-4px);
-        }
-
-        .type-card h3 {
-            font-size: 1.375rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            color: #0f172a;
-        }
-
-        .type-card p {
-            color: #475569;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        /* Pricing Section */
-        .pricing-section {
-            padding: 4rem 0;
-            background: white;
-        }
-
-        .pricing-section h2 {
-            font-size: 2.25rem;
-            font-weight: 800;
-            margin-bottom: 1rem;
-            color: #0f172a;
-            text-align: center;
-        }
-
-        .pricing-section .subtitle {
-            text-align: center;
-            color: #475569;
-            margin-bottom: 3rem;
-            font-size: 1.1rem;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-        }
-
-        .pricing-card {
-            background: white;
-            border: 2px solid #e2e8f0;
-            border-radius: 12px;
-            padding: 2.5rem;
-            text-align: center;
-            transition: all 0.2s ease;
-        }
-
-        .pricing-card:hover {
-            border-color: #059669;
-            transform: translateY(-4px);
-        }
-
-        .pricing-card.featured {
-            border-color: #059669;
-            background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
-        }
-
-        .pricing-card h3 {
-            font-size: 1.5rem;
-            font-weight: 800;
-            margin-bottom: 0.5rem;
-            color: #0f172a;
-        }
-
-        .pricing-price {
-            font-size: 2rem;
-            font-weight: 900;
-            color: #059669;
-            margin-bottom: 1rem;
-        }
-
-        .pricing-card p {
-            color: #475569;
-            margin-bottom: 1.5rem;
-            font-size: 0.95rem;
-        }
-
-        .pricing-features {
-            list-style: none;
-            margin-bottom: 2rem;
-            text-align: left;
-        }
-
-        .pricing-features li {
-            padding: 0.5rem 0;
-            color: #475569;
-            position: relative;
-            padding-left: 1.5rem;
-            font-size: 0.9rem;
-        }
-
-        .pricing-features li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: #059669;
-            font-weight: 700;
-        }
-
-        .pricing-btn {
-            background: #0f172a;
-            color: white;
-            padding: 1rem 1.5rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 0.95rem;
-            transition: all 0.2s ease;
-            border: 2px solid #0f172a;
-            display: inline-block;
-        }
-
-        .pricing-btn:hover {
-            background: transparent;
-            color: #0f172a;
-        }
-
-        /* Results */
-        .results-section {
-            padding: 4rem 0;
-            background: #f8fafc;
-        }
-
-        .results-section h2 {
-            font-size: 2.25rem;
-            font-weight: 800;
-            margin-bottom: 2rem;
-            color: #0f172a;
-            text-align: center;
-        }
-
-        .results-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2rem;
-            text-align: center;
-        }
-
-        .result-stat {
-            background: white;
-            padding: 2rem;
-            border-radius: 12px;
-            border: 2px solid #e2e8f0;
-        }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 900;
-            color: #059669;
-            margin-bottom: 0.5rem;
-        }
-
-        .stat-label {
-            color: #475569;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-size: 0.8rem;
-        }
-
-        /* CTA */
-        .cta-section {
-            padding: 4rem 0;
-            background: #0f172a;
-            text-align: center;
-        }
-
-        .cta-section h2 {
-            font-size: 2.5rem;
-            font-weight: 900;
-            margin-bottom: 1rem;
-            color: white;
-        }
-
-        .cta-section p {
-            font-size: 1.1rem;
-            color: #94a3b8;
-            margin-bottom: 2rem;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .cta-section .btn-primary {
-            background: white;
-            color: #0f172a;
-            border: 2px solid white;
-        }
-
-        .cta-section .btn-primary:hover {
-            background: transparent;
-            color: white;
-        }
-
-        /* Back Link */
-        .back-link {
-            padding: 2rem 0;
-            text-align: center;
-            background: #f8fafc;
-            border-top: 1px solid #e2e8f0;
-        }
-
-        .back-link a {
-            color: #059669;
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .back-link a:hover {
-            text-decoration: underline;
-        }
-
-        /* Mobile */
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2.5rem;
-            }
-
-            .importance-grid,
-            .types-grid,
-            .pricing-grid,
-            .process-steps,
-            .results-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .container {
-                padding: 0 1.5rem;
-            }
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Executive Thought Leadership | Professional Thought Leadership Services for Business Leaders</title>
+  <meta name="description" content="Professional executive thought leadership services for CEOs, founders, and C-suite executives. Strategic content creation and positioning that builds industry authority and drives business results.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://executivecontentwriter.com/executive-thought-leadership">
+  <meta property="og:title" content="Executive Thought Leadership | Professional Thought Leadership Services for Business Leaders">
+  <meta property="og:description" content="Professional executive thought leadership services for CEOs, founders, and C-suite executives. Strategic content creation and positioning that builds industry authority and drives business results.">
+  <meta property="og:url" content="https://executivecontentwriter.com/executive-thought-leadership">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Executive Content Writer">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Executive Thought Leadership | Professional Thought Leadership Services for Business Leaders">
+  <meta name="twitter:description" content="Professional executive thought leadership services for CEOs, founders, and C-suite executives. Strategic content creation and positioning that builds industry authority and drives business results.">
+  <meta name="theme-color" content="#0d0b09">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/ecw.css">
+  <script type="application/ld+json">
+  {"@context": "https://schema.org", "@graph": [{"@type": "Organization", "@id": "https://executivecontentwriter.com/#organization", "name": "Executive Content Writer", "url": "https://executivecontentwriter.com/", "description": "Executive communications and executive content writing. Part of UDG Development Ltd.", "parentOrganization": {"@type": "Organization", "name": "UDG Development Ltd", "url": "https://udgco.com"}}, {"@type": "WebSite", "@id": "https://executivecontentwriter.com/#website", "url": "https://executivecontentwriter.com/", "name": "Executive Content Writer", "publisher": {"@id": "https://executivecontentwriter.com/#organization"}}, {"@type": "WebPage", "@id": "https://executivecontentwriter.com/executive-thought-leadership#webpage", "url": "https://executivecontentwriter.com/executive-thought-leadership", "name": "Executive Thought Leadership | Professional Thought Leadership Services for Business Leaders", "description": "Professional executive thought leadership services for CEOs, founders, and C-suite executives. Strategic content creation and positioning that builds industry authority and drives business results.", "isPartOf": {"@id": "https://executivecontentwriter.com/#website"}, "about": {"@id": "https://executivecontentwriter.com/#organization"}, "inLanguage": "en-GB"}, {"@type": "ProfessionalService", "@id": "https://executivecontentwriter.com/#service", "name": "Executive Content Writer", "provider": {"@id": "https://executivecontentwriter.com/#organization"}, "url": "https://executivecontentwriter.com/", "serviceType": "Executive content writing and founder-led LinkedIn and X ghostwriting", "areaServed": "Worldwide", "priceRange": "From $2,500 a month", "description": "Founder-led LinkedIn and X ghostwriting from $2,500 a month. Clients live within two weeks, with a 21-day get-out clause."}, {"@type": "FAQPage", "@id": "https://executivecontentwriter.com/executive-thought-leadership#faq", "url": "https://executivecontentwriter.com/executive-thought-leadership", "mainEntity": [{"@type": "Question", "name": "What is executive thought leadership?", "acceptedAnswer": {"@type": "Answer", "text": "A public point of view, in a leader's voice, that a serious reader can use or argue with."}}, {"@type": "Question", "name": "How often should a founder publish?", "acceptedAnswer": {"@type": "Answer", "text": "Often enough to keep a real argument alive. The quality of the point beats an invented quota."}}, {"@type": "Question", "name": "Where do you publish?", "acceptedAnswer": {"@type": "Answer", "text": "Founder-led LinkedIn and X ghostwriting, from $2,500 a month."}}, {"@type": "Question", "name": "Do you guarantee authority or revenue?", "acceptedAnswer": {"@type": "Answer", "text": "No. Authority is a reader's conclusion. We do not sell it as a deliverable."}}]}]}
+  </script>
 </head>
-
 <body>
-    <!-- Header -->
-    <section class="header">
-        <div class="container">
-            <h1>Executive <span class="highlight">Thought Leadership</span></h1>
-            <p>Professional thought leadership development for CEOs, founders, and C-suite executives. Strategic content creation and positioning services that build industry authority and drive business results.</p>
-            <div class="header-cta">
-                <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free Thought Leadership Strategy Call</a>
-            </div>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="nav">
+      <a class="brand" href="/">Executive Content Writer</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/executive-content-writer-guide">Guide</a></li>
+        <li><a href="/executive-communications">Communications</a></li>
+        <li><a href="/linkedin-strategy-startup-ceos">LinkedIn</a></li>
+        <li><a href="/linkedin-content-writer-pricing">Pricing</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+        <a class="btn sm" href="https://cal.com/udg-socials/30min">Book a call</a>
+      </div>
+    </header>
+  <main id="content">
+    <header class="hero">
+      <div class="field" aria-hidden="true">
+        <span class="orb orb-a"></span>
+        <span class="orb orb-b"></span>
+        <span class="vignette"></span>
+      </div>
+      <div class="wrap hero-copy">
+        <p class="label">Point of view</p>
+        <h1>Executive Thought Leadership</h1>
+        <p class="lede">Thought leadership is a point of view the market can use. If nobody could disagree, it is a slogan.</p>
+        <div class="hero-actions">
+          <a class="btn" href="https://cal.com/udg-socials/30min">Book a call</a>
+          <a class="btn ghost" href="/linkedin-content-writer-pricing">Pricing</a>
         </div>
+      </div>
+    </header>
+    <div class="wrap sheet">
+      <nav class="toc" aria-label="On this page">
+          <p class="label">On this page</p>
+          <ol>
+            <li><a href="#definition">A useful definition</a></li>
+            <li><a href="#view">Point of view</a></li>
+            <li><a href="#formats">Formats</a></li>
+            <li><a href="#cadence">Cadence</a></li>
+            <li><a href="#avoid">What to leave out</a></li>
+          </ol>
+        </nav>
+      <article class="prose">
+        
+        <h2 id="definition">A useful definition</h2>
+        <p>Executive thought leadership is a point of view the market can use. It is not a slogan, and it is not a diary of the working week. If a reader in your category can act differently, or argue with you properly, the piece has done its job.</p>
+        <p>Industry authority is the same test, seen from outside. People grant it when your public record matches your work. They do not grant it because a page says you are a leader. Positioning is the choice of what to be known for. It is a decision, made before the draft, about the problem you are willing to be quoted on for a year.</p>
+        <h2 id="view">Point of view</h2>
+        <p>A point of view needs a subject, a stance, and a boundary. The subject is the problem you actually see. The stance is what you believe should happen. The boundary is what you will not claim.</p>
+        <p>Leaders often skip the boundary. That is how thought leadership becomes advertising. Say what you will not promise. The readers who are paying attention trust a limit faster than they trust a boast. A stance a rival could not disagree with is not a stance. It is a caption.</p>
+        <h2 id="formats">Formats that can carry it</h2>
+        <p>A short post can hold a stance if the sentence is sharp. A longer note can hold the evidence. A talk should be the same idea, said to a room, not a new personality for the afternoon.</p>
+        <p>Pick the format that fits the idea. Do not pick the format because a calendar has a gap. LinkedIn and X are the formats we write as a published service, from $2,500 a month. They suit executives who are willing to be specific in public and to stay for the replies. The <a href="/executive-communications">communications guide</a> explains why those posts still have to match the internal line.</p>
+        <h2 id="cadence">Cadence</h2>
+        <p>Cadence is a promise to your own thinking. It is not a promise to a feed. Once a week, with a real point, is more useful than a daily post that repeats a slogan. The test is whether the executive still recognises the argument after a month.</p>
+        <p>Clients live within two weeks of a start, so the cadence begins while the voice is still being learned. That is uncomfortable and correct. Waiting for a perfect voice is how the public record stays empty. The 21-day get-out clause is there if the argument and the person do not match.</p>
+        <h2 id="avoid">What to leave out</h2>
+        <p>Leave out trophies you would not mention in a serious meeting. Leave out other people's numbers. Leave out a campaign about a topic you do not work on. More than a billion views across socials to date is the only reach figure this site uses. It describes our work. It is not a target we paint onto your name.</p>
+        <p>If you want the operating version for LinkedIn, use the <a href="/linkedin-strategy-startup-ceos">startup CEO framework</a>. If you want the fee, it is a single figure on the <a href="/linkedin-content-writer-pricing">pricing page</a>.</p>
+    
+      </article>
+    </div>
+    <section class="faq">
+      <div class="wrap">
+        <p class="label">Questions</p>
+        <h2>Common questions</h2>
+        <details>
+          <summary>What is executive thought leadership?</summary>
+          <p>A public point of view, in a leader&#x27;s voice, that a serious reader can use or argue with.</p>
+        </details>
+        <details>
+          <summary>How often should a founder publish?</summary>
+          <p>Often enough to keep a real argument alive. The quality of the point beats an invented quota.</p>
+        </details>
+        <details>
+          <summary>Where do you publish?</summary>
+          <p>Founder-led LinkedIn and X ghostwriting, from $2,500 a month.</p>
+        </details>
+        <details>
+          <summary>Do you guarantee authority or revenue?</summary>
+          <p>No. Authority is a reader&#x27;s conclusion. We do not sell it as a deliverable.</p>
+        </details>
+      </div>
     </section>
-
-    <!-- What is Executive Thought Leadership -->
-    <section class="what-section">
-        <div class="container">
-            <h2>What is Executive Thought Leadership?</h2>
-            <p>Executive thought leadership is the strategic positioning of business leaders as authoritative voices in their industry through consistent, high-quality content that demonstrates expertise, shares valuable insights, and influences industry conversations. Unlike general marketing content, executive thought leadership focuses on building personal credibility and professional authority that translates into business opportunities.</p>
-            
-            <p>As your executive thought leadership specialist, I work with CEOs, founders, and C-suite executives to develop LinkedIn content, industry insights, and strategic commentary that positions you as a go-to expert in your field. With an intelligence and cybersecurity background, I bring unique credibility to technology sectors while understanding the strategic communication needs of executive leadership.</p>
-            
-            <p>Professional executive thought leadership development involves consistent content creation, strategic positioning, voice development, and long-term reputation building that supports your business objectives and establishes lasting industry influence.</p>
+    <section class="related">
+      <div class="wrap">
+        <p class="label">Continue</p>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/executive-content-writer-guide">Executive content writer guide</a></li>
+          <li><a href="/executive-writer">Executive writer</a></li>
+          <li><a href="/content-writer-for-executives">Content writer for executives</a></li>
+        </ul>
+      </div>
+    </section>
+    <section class="closer" aria-label="Book a call">
+      <div class="wrap">
+        <div class="closer-panel">
+          <p class="label">Next</p>
+          <h2>Book a call</h2>
+          <p>Founder-led LinkedIn and X ghostwriting from $2,500 a month. Clients live within two weeks, with a 21-day get-out clause.</p>
+          <a class="btn" href="https://cal.com/udg-socials/30min">Book a call</a>
         </div>
+      </div>
     </section>
-
-    <!-- Why Important -->
-    <section class="importance-section">
-        <div class="container">
-            <h2>Why Executive Thought Leadership Matters</h2>
-
-            <div class="importance-grid">
-                <div class="importance-card">
-                    <div class="importance-icon">💼</div>
-                    <h3>Business Development</h3>
-                    <p>Thought leadership attracts high-quality prospects, partnership opportunities, and strategic relationships that drive revenue growth.</p>
-                </div>
-
-                <div class="importance-card">
-                    <div class="importance-icon">👥</div>
-                    <h3>Talent Attraction</h3>
-                    <p>Top professionals want to work for recognized industry leaders. Strong thought leadership helps recruit and retain the best talent.</p>
-                </div>
-
-                <div class="importance-card">
-                    <div class="importance-icon">💰</div>
-                    <h3>Investor Relations</h3>
-                    <p>Investors back leaders with strong industry positioning. Thought leadership builds confidence and supports fundraising objectives.</p>
-                </div>
-
-                <div class="importance-card">
-                    <div class="importance-icon">📈</div>
-                    <h3>Market Positioning</h3>
-                    <p>Establish your company's market position through your personal expertise and industry insights, differentiating from competitors.</p>
-                </div>
-
-                <div class="importance-card">
-                    <div class="importance-icon">🎯</div>
-                    <h3>Industry Influence</h3>
-                    <p>Shape industry conversations, influence standards, and position yourself at the center of important industry developments.</p>
-                </div>
-
-                <div class="importance-card">
-                    <div class="importance-icon">🔗</div>
-                    <h3>Network Expansion</h3>
-                    <p>Connect with other industry leaders, potential partners, and key stakeholders through your thought leadership content and positioning.</p>
-                </div>
-            </div>
+  </main>
+  <footer class="site-foot">
+      <div class="wrap foot-grid">
+        <div>
+          <p class="brand-foot">Executive Content Writer</p>
+          <p>Executive communications and executive content writing.</p>
+          <p class="legal"><a href="https://udgco.com">Part of UDG Development Ltd</a></p>
         </div>
-    </section>
-
-    <!-- How We Build Thought Leadership -->
-    <section class="process-section">
-        <div class="container">
-            <h2>How We Build Executive Thought Leadership</h2>
-
-            <div class="process-steps">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <h3>Strategic Positioning</h3>
-                    <p>Identify your unique expertise, industry insights, and competitive advantages that form the foundation of your thought leadership platform.</p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <h3>Voice Development</h3>
-                    <p>Comprehensive voice capture sessions to understand your communication style, expertise areas, and strategic messaging approach.</p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <h3>Content Strategy</h3>
-                    <p>Develop a comprehensive content strategy that positions you as an industry authority while supporting your business objectives.</p>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <h3>Consistent Execution</h3>
-                    <p>Regular content creation and strategic positioning that builds momentum and establishes your reputation over time.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Content Types -->
-    <section class="content-types">
-        <div class="container">
-            <h2>Executive Thought Leadership Content</h2>
-            <p class="subtitle">Strategic content types that build authority and influence</p>
-
-            <div class="types-grid">
-                <div class="type-card">
-                    <h3>LinkedIn Thought Leadership</h3>
-                    <p>Strategic LinkedIn posts, articles, and commentary that position you as an industry expert and drive meaningful business conversations.</p>
-                </div>
-
-                <div class="type-card">
-                    <h3>Industry Analysis</h3>
-                    <p>Market insights, trend analysis, and strategic commentary that demonstrates your deep understanding of industry dynamics and future direction.</p>
-                </div>
-
-                <div class="type-card">
-                    <h3>Executive Insights</h3>
-                    <p>Leadership lessons, strategic decision-making frameworks, and business philosophy that showcases your executive experience and wisdom.</p>
-                </div>
-
-                <div class="type-card">
-                    <h3>Innovation Commentary</h3>
-                    <p>Technology trends, innovation insights, and forward-looking perspectives that position you at the forefront of industry evolution.</p>
-                </div>
-
-                <div class="type-card">
-                    <h3>Case Studies & Examples</h3>
-                    <p>Strategic examples from your experience, lessons learned, and practical insights that provide value to other business leaders.</p>
-                </div>
-
-                <div class="type-card">
-                    <h3>Industry Networking</h3>
-                    <p>Strategic engagement with industry conversations, thoughtful commentary on peer content, and relationship building through content.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="pricing-section">
-        <div class="container">
-            <h2>Executive Thought Leadership Pricing</h2>
-            <p class="subtitle">Professional thought leadership development packages for executive leaders</p>
-
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Essential</h3>
-                    <div class="pricing-price">$2,500<span style="font-size: 1rem; color: #64748b;">/month</span></div>
-                    <p>Perfect for executives who want to establish thought leadership through consistent, strategic content creation.</p>
-                    
-                    <ul class="pricing-features">
-                        <li>LinkedIn thought leadership content (3-5 posts weekly)</li>
-                        <li>90-minute strategic positioning session</li>
-                        <li>Industry analysis and commentary</li>
-                        <li>Bi-weekly strategy review calls</li>
-                        <li>Direct specialist access</li>
-                        <li>Content performance tracking</li>
-                    </ul>
-
-                    <a href="https://calendly.com/lewispatrickwaldron" class="pricing-btn" target="_blank">Get Started</a>
-                </div>
-
-                <div class="pricing-card featured">
-                    <h3>Professional</h3>
-                    <div class="pricing-price">$3,500<span style="font-size: 1rem; color: #64748b;">/month</span></div>
-                    <p>Comprehensive thought leadership strategy including advanced positioning and industry influence building.</p>
-                    
-                    <ul class="pricing-features">
-                        <li>Everything in Essential package</li>
-                        <li>Executive newsletter development</li>
-                        <li>Strategic industry networking support</li>
-                        <li>Advanced thought leadership positioning</li>
-                        <li>Monthly strategy optimization</li>
-                        <li>Cross-platform content strategy</li>
-                    </ul>
-
-                    <a href="https://calendly.com/lewispatrickwaldron" class="pricing-btn" target="_blank">Choose Professional</a>
-                </div>
-
-                <div class="pricing-card">
-                    <h3>Enterprise</h3>
-                    <div class="pricing-price">$5,000<span style="font-size: 1rem; color: #64748b;">/month</span></div>
-                    <p>Complete thought leadership solution with unlimited support for comprehensive industry positioning and influence.</p>
-                    
-                    <ul class="pricing-features">
-                        <li>Everything in Professional package</li>
-                        <li>Unlimited thought leadership content</li>
-                        <li>Advanced industry positioning strategy</li>
-                        <li>Executive brand consulting</li>
-                        <li>Priority 48-hour turnaround</li>
-                        <li>Weekly strategic sessions</li>
-                    </ul>
-
-                    <a href="https://calendly.com/lewispatrickwaldron" class="pricing-btn" target="_blank">Get Enterprise</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Results -->
-    <section class="results-section">
-        <div class="container">
-            <h2>Executive Thought Leadership Results</h2>
-
-            <div class="results-grid">
-                <div class="result-stat">
-                    <div class="stat-number">40M+</div>
-                    <div class="stat-label">Views Generated</div>
-                </div>
-
-                <div class="result-stat">
-                    <div class="stat-number">300%</div>
-                    <div class="stat-label">Engagement Increase</div>
-                </div>
-
-                <div class="result-stat">
-                    <div class="stat-number">15+</div>
-                    <div class="stat-label">Hours Saved Weekly</div>
-                </div>
-
-                <div class="result-stat">
-                    <div class="stat-number">6-12</div>
-                    <div class="stat-label">Months to Authority</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Build Your Executive Thought Leadership?</h2>
-            <p>Get a free strategy session to discuss your thought leadership objectives and explore how professional positioning can accelerate your industry influence and business results.</p>
-            <a href="https://calendly.com/lewispatrickwaldron" class="btn-primary" target="_blank">Book Your Free Strategy Call</a>
-        </div>
-    </section>
-
-    <!-- Back to Main Site -->
-    <section class="back-link">
-        <div class="container">
-            <p><a href="/">← Back to Executive Content Writer</a> | <a href="/executive-content-writer-guide.html">Learn More About Executive Content Writers</a></p>
-        </div>
-    </section>
+        <ul class="foot-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="/executive-content-writer-guide">Executive content writer guide</a></li>
+            <li><a href="/executive-writer">Executive writer</a></li>
+            <li><a href="/content-writer-for-executives">Content writer for executives</a></li>
+            <li><a href="/executive-communications">Executive communications</a></li>
+            <li><a href="/executive-thought-leadership">Executive thought leadership</a></li>
+            <li><a href="/linkedin-strategy-startup-ceos">LinkedIn strategy for startup CEOs</a></li>
+            <li><a href="/hire-ghostwriter">Hire a ghostwriter</a></li>
+            <li><a href="/linkedin-content-writer-pricing">Pricing</a></li>
+        </ul>
+      </div>
+    </footer>
+  <script src="/assets/ecw.js" defer></script>
 </body>
 </html>
