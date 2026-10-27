@@ -1,17 +1,4 @@
 User-agent: *
 Allow: /
 
-# Block unnecessary crawling to improve crawl budget
-Disallow: /api/
-Disallow: /_next/
-Disallow: /admin/
-Disallow: /*.json$
-
-# Block specific problematic query parameters but allow search
-Disallow: /*?utm_*
-Disallow: /*?fbclid=*
-Disallow: /*?gclid=*
-Disallow: /*?ref=*
-
-# Sitemap location
 Sitemap: https://executivecontentwriter.com/sitemap.xml
